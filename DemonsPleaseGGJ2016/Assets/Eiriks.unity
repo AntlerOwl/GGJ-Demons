@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPage: 0
+  menuCanvas: {fileID: 1346858860}
   bestiaryCanvas: {fileID: 595054214}
   page0: {fileID: 1105655296}
   page1: {fileID: 548626918}
@@ -684,6 +685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Batwings
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
@@ -1069,6 +1073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Tail
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
@@ -1542,6 +1549,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Bones
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
@@ -1751,6 +1761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Blood
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
@@ -2095,6 +2108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Soul of a man
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
@@ -2369,6 +2385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Pheonix Ashes
+  cost: 0
+  tooltip: Tooltip
+  icon: {fileID: 0}
   typeTier:
     type: {fileID: 0}
     tier: 0
