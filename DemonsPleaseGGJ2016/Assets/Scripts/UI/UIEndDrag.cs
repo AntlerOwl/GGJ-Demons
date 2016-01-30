@@ -13,7 +13,6 @@ public class UIEndDrag : MonoBehaviour, IDropHandler, IEndDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        print("onenddrag");
         UIDragManager.instance.EndDrag();
     }
 

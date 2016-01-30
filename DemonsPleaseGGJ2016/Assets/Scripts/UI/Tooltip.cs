@@ -16,6 +16,7 @@ public class Tooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
 	public void OnPointerEnter(PointerEventData e)
 	{
+        tooltipController.SetTextsActive(title.Length > 0, desc.Length > 0);
 		tooltipController.OnActivate(title, desc);
 	}
 
@@ -33,6 +34,5 @@ public class Tooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 	{
 		this.title = title;
 		this.desc = desc;
-        tooltipController.SetTextsActive(title.Length > 0, desc.Length > 0);
 	}
 }

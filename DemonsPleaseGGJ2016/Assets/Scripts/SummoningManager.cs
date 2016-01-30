@@ -10,6 +10,8 @@ public class SummoningManager : MonoBehaviour
     [Tooltip("List of all ingredients availible")]
     public List<Ingredient> allIngredients = new List<Ingredient>();
     public const int MaxTier = 4;
+    private List<UISummonItem> summonSlots = new List<UISummonItem>();
+    [SerializeField]private Transform summonSlotsParent;
 
     void Start()
     {
@@ -22,6 +24,12 @@ public class SummoningManager : MonoBehaviour
         for (int i = 0; i < 5; i++)
         {
             ingredientSlots.Add(null);
+        }
+
+        summonSlots = new List<UISummonItem>(summonSlotsParent.GetComponentsInChildren<UISummonItem>());
+        for (int i = 0; i < summonSlots.Count; i++)
+        {
+            summonSlots[i].summonSlotId = i;
         }
     }
 
@@ -54,6 +62,12 @@ public class SummoningManager : MonoBehaviour
     public void AddIngredient(Ingredient ingredient, int summonSlotId)
     {
         ingredientSlots[summonSlotId] = ingredient;
+    }
+
+    public void RemoveIngredient(int summonSlot)
+    {
+        ingredientSlots[summonSlot] = null;
+        summonSlots[summonSlot].iconImage.sprite = GUIManager.instance.emptySprite;
     }
 
     /// <summary>

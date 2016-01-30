@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GUIManager : MonoBehaviour
 {
+    public Sprite emptySprite;
     [SerializeField]private GameObject uiIngredientPrefab;
     [SerializeField]private Transform ingredientsParent;
     private SummoningManager summoningManager;
