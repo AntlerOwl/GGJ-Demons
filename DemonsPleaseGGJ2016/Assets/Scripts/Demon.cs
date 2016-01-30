@@ -4,4 +4,5 @@ using System.Collections;
 public class Demon : MonoBehaviour
 {
     public string demonName = "Demon";
+    public Sprite icon;
 }
