@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 public class SummoningTable : MonoBehaviour
 {
+    public const int MaxTier = 4;
     public List<TypeTier> ingredients;
     public List<Recipe> recipes;
+    public List<TypeTier> allTypeTiers = new List<TypeTier>();
 
     [ContextMenu("Test combine")]
     public void TestCombine()
@@ -27,11 +29,11 @@ public class SummoningTable : MonoBehaviour
     /// <returns>The best matching recipe to the ingredients. Null if no match.</returns>
     Recipe TryCombine()
     {
-        List<TypeTier> mergedIngredients = MergeTypes(ingredients);
+        List<TypeTier> summoningIngredients = MergeTypes(ingredients);
         foreach (var recipe in recipes)
         {
             List<TypeTier> recipeIngredients = MergeTypes(recipe.ingredients);
-            bool matching = MatchingIngredients(mergedIngredients, recipeIngredients);
+            bool matching = MatchingIngredients(summoningIngredients, recipeIngredients);
             if (matching) 
             {
                 print("Ingredients matching: " + recipe.recipeName);
@@ -79,35 +81,40 @@ public class SummoningTable : MonoBehaviour
             {
                 mer.Add(orig[i].type, orig[i].tier);
             }
-            /*for (int j = 0; j < orig.Count; j ++)
-            {
-                if (orig[i].type == orig[j].type)
-                {
-                    if (mer.ContainsKey(
-                }
-            }*/
+//            print(string.Format("Merged {0} has now tier {1}", orig[i].type, orig[i].tier));
+        }
+        foreach (var item in mer)
+        {
+//            TypeTier tt = GetTypeTierByType(item.Key, item.Value);
+//            if (tt)
+//            {
+//                
+//                merged.Add(tt);
+//            }
+            TypeTier tt = new TypeTier(item.Key, item.Value);
+            merged.Add(tt);
         }
         return merged;
     }
 
     /// <summary>
-    /// Checks if the ingredients in the two lists match. Check both the types and wheter A's tier is more than B's tier.
+    /// Checks summoningIngredients against checkIngredients. Check both the types and wheter summoning's tier is more than check's tier.
     /// </summary>
     /// <returns><c>true</c>, if ingredients was matchinged, <c>false</c> otherwise.</returns>
     /// <param name="a">The alpha component.</param>
     /// <param name="b">The blue component.</param>
-    bool MatchingIngredients(List<TypeTier> a, List<TypeTier> b)
+    bool MatchingIngredients(List<TypeTier> summoningIngredients, List<TypeTier> checkIngredients)
     {
         // Go through all items and compare them to the other items
-        foreach (var itemA in a)
+        foreach (var summoningIng in summoningIngredients)
         {
-            foreach (var itemB in b) 
+            foreach (var checkIng in checkIngredients) 
             {
                 // Check if the item types match
-                if (itemA.type == itemB.type)
+                if (summoningIng.type == checkIng.type)
                 {
                     // If they match, return false if A's tier is less than B's tier
-                    if (itemA.tier < itemB.tier)
+                    if (summoningIng.tier < checkIng.tier)
                     {
                         return false;
                     }
@@ -119,5 +126,26 @@ public class SummoningTable : MonoBehaviour
             }
         }
         return true;
+    }
+
+    /// <summary>
+    /// Gets an existing TypeTier object with the specified type and tier. Null if no matching is found.
+    /// </summary>
+    /// <returns>The type tier by type.</returns>
+    /// <param name="type">Type.</param>
+    /// <param name="tier">Tier.</param>
+    TypeTier GetTypeTierByType(ItemType type, int tier)
+    {
+        tier = Mathf.Clamp(tier, 0, MaxTier); // Make sure we don't try to find a tier above the max tier availible
+        foreach (var item in allTypeTiers)
+        {
+            if (item.type == type && item.tier == tier)
+            {
+                print(string.Format("{0}({3}) matching {1}({2})", type, item.type, item.tier, tier));
+                return item;
+            }
+        }
+        print(string.Format("couldnt find a matching typetier with {0}({1})", type, tier));
+        return null;
     }
 }
