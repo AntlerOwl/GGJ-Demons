@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400616}
-  - 114: {fileID: 11429998}
+  - 114: {fileID: 11453482}
   m_Layer: 0
-  m_Name: Fire 2
+  m_Name: Blood 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11429998
+--- !u!114 &11453482
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -39,13 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Inner Fire
+  ingredientName: Vial of a Virgin's Blood
   cost: 0
-  flavorText: It doesn't have to be yours, silly.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  flavorText: 
+  icon: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b, type: 3}
   typeTier:
-    type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
-    tier: 2
+    type: {fileID: 11480348, guid: 6734bc5df99b74c88a24cb5a2c6b753d, type: 2}
+    tier: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -56,7 +56,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: type
       value: 
-      objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
+      objectReference: {fileID: 11480348, guid: 6734bc5df99b74c88a24cb5a2c6b753d,
         type: 2}
     - target: {fileID: 0}
       propertyPath: tier
@@ -64,25 +64,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Inner Fire
+      value: Vial of a Virgin's Blood
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
       value: 
-      objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
+      objectReference: {fileID: 11480348, guid: 6734bc5df99b74c88a24cb5a2c6b753d,
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: It doesn't have to be yours, silly.
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
