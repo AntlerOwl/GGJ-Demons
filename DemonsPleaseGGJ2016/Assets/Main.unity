@@ -382,10 +382,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 314904885}
   - 114: {fileID: 314904887}
+  - 114: {fileID: 314904889}
   - 114: {fileID: 314904886}
   - 114: {fileID: 314904884}
   - 114: {fileID: 314904888}
-  - 114: {fileID: 314904889}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -436,11 +436,12 @@ MonoBehaviour:
   - {fileID: 11422466, guid: 77c1b1bf9887c48e6b7bde9f88dc0c25, type: 2}
   allIngredients:
   - {fileID: 11448638, guid: a52ebae009f5a13418be799b31c20e1d, type: 2}
-  - {fileID: 11488044, guid: e45037e25f8f97347ba8f1e184d9a956, type: 2}
+  - {fileID: 11448638, guid: 655d95588ec676e439765bf9c04fc77f, type: 2}
   - {fileID: 11471134, guid: fcda893501458ec40bddb8c935472a5f, type: 2}
   - {fileID: 11453482, guid: 5d8c3f786e65048a9b755cba0a81f153, type: 2}
   - {fileID: 11429998, guid: 47c651ac665fd344b8e766e0ad3c6ad7, type: 2}
   - {fileID: 11453482, guid: 4c53c19ece8034b10a05ef89be4dd215, type: 2}
+  summonSlotsParent: {fileID: 812615434}
 --- !u!114 &314904887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c387a4b6c11bf44fea12af3c7413ea92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emptySprite: {fileID: 21300000, guid: 02581f2d4429f4a80b85ccd872e057af, type: 3}
   uiIngredientPrefab: {fileID: 161822, guid: c898aa0392362449294919b0bcc046ce, type: 2}
   ingredientsParent: {fileID: 1714614943}
 --- !u!1 &444342015
@@ -993,6 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   iconImage: {fileID: 248677166}
+  summonSlotId: 0
 --- !u!1 &766407850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   iconImage: {fileID: 684261897}
+  summonSlotId: 0
 --- !u!114 &833090007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,6 +1771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   iconImage: {fileID: 205188757}
+  summonSlotId: 0
 --- !u!114 &1385081593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2320,6 +2325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   iconImage: {fileID: 1568995121}
+  summonSlotId: 0
 --- !u!114 &1933396318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2517,6 +2523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   iconImage: {fileID: 1182216688}
+  summonSlotId: 0
 --- !u!114 &2085898192
 MonoBehaviour:
   m_ObjectHideFlags: 0
