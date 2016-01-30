@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class SummoningManager : MonoBehaviour
 {
+    [SerializeField]private UISummonPanel summonPanel;
     public List<Ingredient> ingredientSlots;
     public List<Recipe> allRecipes;
-
     [Tooltip("List of all ingredients availible")]
     public List<Ingredient> allIngredients = new List<Ingredient>();
     public const int MaxTier = 4;
@@ -31,6 +31,18 @@ public class SummoningManager : MonoBehaviour
         if (recipe != null)
         {
             print("Results: " + recipe.target.demonName);
+            // TODO Sum up cost and see if we have enough
+            int totalSum = 0;
+            foreach (var item in ingredientSlots)
+            {
+                if (item)
+                {
+                    totalSum += item.cost;
+                }
+            }
+            print("Total sum: " + totalSum);
+
+            summonPanel.Activate(recipe.target.icon);
         }
         else
         {
@@ -41,8 +53,6 @@ public class SummoningManager : MonoBehaviour
 
     public void AddIngredient(Ingredient ingredient, int summonSlotId)
     {
-        print("ingcount: " + ingredientSlots.Count);
-        print("slotid: " + summonSlotId);
         ingredientSlots[summonSlotId] = ingredient;
     }
 
@@ -54,7 +64,14 @@ public class SummoningManager : MonoBehaviour
     {
         List<Recipe> matchingRecipes = new List<Recipe>();
         List<Ingredient> curIngredients = new List<Ingredient>();
-        ingredientSlots.ForEach(x => curIngredients.Add(x));
+//        ingredientSlots.ForEach(x => curIngredients.Add(x));
+        foreach (var item in ingredientSlots)
+        {
+            if (item)
+            {
+                curIngredients.Add(item);
+            }
+        }
 
         List<TypeTier> summoningIngredients = MergeIngredients(curIngredients);
 
@@ -64,14 +81,14 @@ public class SummoningManager : MonoBehaviour
 
             if (recipeIngredients.Count > summoningIngredients.Count) 
             {
-                print("There aren't enough ingredients for this recipe, skipping to next");
+//                print("There aren't enough ingredients for this recipe, skipping to next");
                 continue;
             }
 
             bool ingredientsMatchingRecipe = MatchingIngredients(summoningIngredients, recipeIngredients);
             if (ingredientsMatchingRecipe) 
             {
-                print("Ingredients matching: " + recipe.recipeName);
+//                print("Ingredients matching: " + recipe.recipeName);
                 matchingRecipes.Add(recipe);
             }
         }
@@ -85,16 +102,10 @@ public class SummoningManager : MonoBehaviour
 
     List<TypeTier> MergeIngredients(List<Ingredient> orig)
     {
-        print("OrigCount: " + orig.Count);
         List<TypeTier> merged = new List<TypeTier>();
         Dictionary<ItemType, int> mer = new Dictionary<ItemType, int>();
         for (int i = 0; i < orig.Count; i ++)
         {
-            print(mer);
-            print(orig[i]);
-            print(orig[i].typeTier);
-            print(orig[i].typeTier.tier);
-//            break;
             if (mer.ContainsKey(orig[i].typeTier.type))
             {
                 mer[orig[i].typeTier.type] += orig[i].typeTier.tier;

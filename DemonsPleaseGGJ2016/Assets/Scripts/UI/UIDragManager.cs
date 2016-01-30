@@ -20,6 +20,17 @@ public class UIDragManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (curIngredient)
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                EndDrag();
+            }
+        }
+    }
+
     public void BeginDrag(Ingredient ingredient)
     {
         dragImage.gameObject.SetActive(true);
@@ -29,6 +40,7 @@ public class UIDragManager : MonoBehaviour
 
     public void EndDrag()
     {
+        print("End drag");
         dragImage.gameObject.SetActive(false);
         curIngredient = null;
     }

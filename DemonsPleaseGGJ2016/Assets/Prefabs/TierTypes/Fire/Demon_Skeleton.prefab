@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonName: Skeleton
+  icon: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -51,6 +52,11 @@ Prefab:
       propertyPath: demonName
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170422}
