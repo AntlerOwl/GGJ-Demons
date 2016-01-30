@@ -12,8 +12,8 @@ public class FollowMouse : MonoBehaviour
 	void Update ()
 	{
 		if (followActive == true){
-			transform.position.x = xOffset;//Get mouse position
-			transform.position.y = yOffset;//Get mouse position
+		//	transform.position.x = xOffset;//Get mouse position
+		//	transform.position.y = yOffset;//Get mouse position
 		}
 	}
 

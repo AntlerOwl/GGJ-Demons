@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class WhichPageIsCurrent : MonoBehaviour
 {
 	public int currentPage = 0;
 	int maxPage = 0;
-	bool bestiaryActive = false;
+	bool bestiaryActive = true;
 	
 	List<GameObject> pages = new List<GameObject>();
 	public GameObject bestiaryCanvas;
