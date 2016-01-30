@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class SummoningManager : MonoBehaviour
 {
-    public List<Ingredient> curIngredients;
+    public List<Ingredient> ingredientSlots;
     public List<Recipe> allRecipes;
 
     [Tooltip("List of all ingredients availible")]
@@ -18,10 +18,10 @@ public class SummoningManager : MonoBehaviour
 
     void Init()
     {
-        curIngredients = new List<Ingredient>();
-        for (int i = 0; i < curIngredients.Count; i++)
+        ingredientSlots = new List<Ingredient>();
+        for (int i = 0; i < 5; i++)
         {
-            curIngredients.Add(null);
+            ingredientSlots.Add(null);
         }
     }
 
@@ -41,7 +41,9 @@ public class SummoningManager : MonoBehaviour
 
     public void AddIngredient(Ingredient ingredient, int summonSlotId)
     {
-        curIngredients[summonSlotId] = ingredient;
+        print("ingcount: " + ingredientSlots.Count);
+        print("slotid: " + summonSlotId);
+        ingredientSlots[summonSlotId] = ingredient;
     }
 
     /// <summary>
@@ -51,6 +53,9 @@ public class SummoningManager : MonoBehaviour
     Recipe TryCombine()
     {
         List<Recipe> matchingRecipes = new List<Recipe>();
+        List<Ingredient> curIngredients = new List<Ingredient>();
+        ingredientSlots.ForEach(x => curIngredients.Add(x));
+
         List<TypeTier> summoningIngredients = MergeIngredients(curIngredients);
 
         foreach (var recipe in allRecipes)
@@ -80,10 +85,16 @@ public class SummoningManager : MonoBehaviour
 
     List<TypeTier> MergeIngredients(List<Ingredient> orig)
     {
+        print("OrigCount: " + orig.Count);
         List<TypeTier> merged = new List<TypeTier>();
         Dictionary<ItemType, int> mer = new Dictionary<ItemType, int>();
         for (int i = 0; i < orig.Count; i ++)
         {
+            print(mer);
+            print(orig[i]);
+            print(orig[i].typeTier);
+            print(orig[i].typeTier.tier);
+//            break;
             if (mer.ContainsKey(orig[i].typeTier.type))
             {
                 mer[orig[i].typeTier.type] += orig[i].typeTier.tier;
