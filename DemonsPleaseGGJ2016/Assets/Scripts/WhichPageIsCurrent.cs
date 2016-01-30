@@ -26,9 +26,21 @@ public class WhichPageIsCurrent : MonoBehaviour
 	public GameObject page8;
 	public GameObject page9;
 
+	private AudioSource audioOut;
+
+	public AudioClip openBook;
+	public AudioClip closeBook;
+	public AudioClip openPhone;
+	public AudioClip closePhone;
+	public AudioClip openSummon;
+	public AudioClip closeSummon;
+	public AudioClip flipPage;
+
 	// Use this for initialization
 	void Start ()
 	{
+		audioOut = GetComponent<AudioSource>();
+
 		if (page0){
 			pages.Add (page0);
 		}
@@ -136,6 +148,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 	public void FlipLeft (){
 		if (currentPage > 0){
 			currentPage = currentPage - 1;
+			audioOut.PlayOneShot(flipPage);
 		}
 	}
 
@@ -143,6 +156,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 	public void FlipRight () {
 		if (currentPage < maxPage){
 			currentPage = currentPage + 1;
+			audioOut.PlayOneShot(flipPage);
 		}
 	}
 
@@ -151,6 +165,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		bestiaryActive = true;
 		bestiaryCanvas.SetActive(true);
 		menuCanvas.SetActive(false);
+		audioOut.PlayOneShot(openBook);
 	}
 
 	//Call this one on the click of the button that deactivates the bestiary
@@ -158,6 +173,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		bestiaryActive = false;
 		bestiaryCanvas.SetActive(false);
 		menuCanvas.SetActive(true);
+		audioOut.PlayOneShot(closeBook);
 	}
 
     //Call this one on the click of the button that activates the Summon BOok
@@ -166,6 +182,7 @@ public class WhichPageIsCurrent : MonoBehaviour
         summonActive = true;
         summoningCanvas.SetActive(true);
         menuCanvas.SetActive(false);
+		audioOut.PlayOneShot(openSummon);
     }
 
     //Call this one on the click of the button that deactivates the Summon Book
@@ -174,6 +191,7 @@ public class WhichPageIsCurrent : MonoBehaviour
         summonActive = false;
         summoningCanvas.SetActive(false);
         menuCanvas.SetActive(true);
+		audioOut.PlayOneShot(closeSummon);
     }
 
     //Call this one on the click of the button that activates the Phone
@@ -182,6 +200,7 @@ public class WhichPageIsCurrent : MonoBehaviour
         phoneActive = true;
         phoneCanvas.SetActive(true);
         menuCanvas.SetActive(false);
+		audioOut.PlayOneShot(openPhone);
     }
 
     //Call this one on the click of the button that deactivates the Summon Book
@@ -190,6 +209,7 @@ public class WhichPageIsCurrent : MonoBehaviour
         phoneActive = false;
         phoneCanvas.SetActive(false);
         menuCanvas.SetActive(true);
+		audioOut.PlayOneShot(closePhone);
     }
 }
 	

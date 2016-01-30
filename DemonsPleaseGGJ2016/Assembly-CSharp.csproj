@@ -45,12 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GUIManager.cs" />
      <Compile Include="Assets\Scripts\Demon.cs" />
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
+     <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Ingredient.cs" />
      <Compile Include="Assets\Scripts\ItemType.cs" />
+     <Compile Include="Assets\Scripts\Mission\Mission.cs" />
+     <Compile Include="Assets\Scripts\Mission\MissionControll.cs" />
+     <Compile Include="Assets\Scripts\Mission\MissionParameter.cs" />
      <Compile Include="Assets\Scripts\Recipe.cs" />
      <Compile Include="Assets\Scripts\RecipeIngredient.cs" />
      <Compile Include="Assets\Scripts\SummoningManager.cs" />
@@ -65,6 +68,7 @@
      <Compile Include="Assets\Scripts\UI\UISummonItem.cs" />
      <Compile Include="Assets\Scripts\UI\UISummonPanel.cs" />
      <Compile Include="Assets\Scripts\WhichPageIsCurrent.cs" />
+     <Compile Include="Assets\UIMissionParameterItem.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
