@@ -13,7 +13,7 @@ public class TypeInitializer : MonoBehaviour
 
     void Start()
     {
-        InitializeTypes();
+//        InitializeTypes();
     }
 
     void InitializeTypes()
@@ -56,7 +56,7 @@ public class TypeInitializer : MonoBehaviour
                 // Make ingredients
                 GameObject obj = Instantiate(ingredientPrefab);
                 obj.name = "Ing_" + items[j];
-                Ingredient ingredient = obj.GetComponent<Ingredient>();
+//                Ingredient ingredient = obj.GetComponent<Ingredient>();
 //                ingredient.Init(
             }
         }
