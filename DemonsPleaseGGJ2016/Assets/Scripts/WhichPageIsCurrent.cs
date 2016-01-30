@@ -9,6 +9,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 	bool bestiaryActive = true;
 	
 	List<GameObject> pages = new List<GameObject>();
+	public GameObject menuCanvas;
 	public GameObject bestiaryCanvas;
 	public GameObject page0;
 	public GameObject page1;
@@ -145,12 +146,14 @@ public class WhichPageIsCurrent : MonoBehaviour
 	public void ActivateBestiary (){
 		bestiaryActive = true;
 		bestiaryCanvas.SetActive(true);
+		menuCanvas.SetActive(false);
 	}
 
 	//Call this one on the click of the button that deactivates the bestiary
 	public void DeactivateBestiary (){
 		bestiaryActive = false;
 		bestiaryCanvas.SetActive(false);
+		menuCanvas.SetActive(true);
 	}
 }
 	
