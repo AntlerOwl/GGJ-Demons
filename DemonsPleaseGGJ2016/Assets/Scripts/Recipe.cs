@@ -6,5 +6,5 @@ public class Recipe : MonoBehaviour
 {
     public string recipeName = "Recipe";
     public Demon target;
-    public List<TypeTier> ingredients;
+    public List<Ingredient> ingredients;
 }
