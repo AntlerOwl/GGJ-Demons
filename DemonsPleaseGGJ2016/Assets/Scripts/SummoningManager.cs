@@ -2,15 +2,30 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class SummoningTable : MonoBehaviour
+public class SummoningManager : MonoBehaviour
 {
-    public const int MaxTier = 4;
-    public List<Ingredient> ingredients;
-    public List<Recipe> recipes;
-    public List<Ingredient> allIngredients = new List<Ingredient>();
+    public List<Ingredient> curIngredients;
+    public List<Recipe> allRecipes;
 
-    [ContextMenu("Test combine")]
-    public void TestCombine()
+    [Tooltip("List of all ingredients availible")]
+    public List<Ingredient> allIngredients = new List<Ingredient>();
+    public const int MaxTier = 4;
+
+    void Start()
+    {
+        Init();
+    }
+
+    void Init()
+    {
+        curIngredients = new List<Ingredient>();
+        for (int i = 0; i < curIngredients.Count; i++)
+        {
+            curIngredients.Add(null);
+        }
+    }
+
+    public void OnSummonClick()
     {
         Recipe recipe = TryCombine();
         if (recipe != null)
@@ -20,75 +35,46 @@ public class SummoningTable : MonoBehaviour
         else
         {
 
-            print("No mathing recipes");
+            print("No matching recipes");
         }
     }
-    [SerializeField]List<TypeTier> summoningIngredients;
-    [SerializeField]List<TestListIngredient> recipeIngredients;
-    public List<Recipe> matchingRecipes = new List<Recipe>();
+
+    public void AddIngredient(Ingredient ingredient, int summonSlotId)
+    {
+        curIngredients[summonSlotId] = ingredient;
+    }
+
     /// <summary>
     /// Tries to combine the ingredients.
     /// </summary>
     /// <returns>The best matching recipe to the ingredients. Null if no match.</returns>
     Recipe TryCombine()
     {
-        matchingRecipes = new List<Recipe>();
-        summoningIngredients = MergeIngredients(ingredients);
-        recipeIngredients = new List<TestListIngredient>();
-        int i = 0; // DEBUG
-        foreach (var recipe in recipes)
+        List<Recipe> matchingRecipes = new List<Recipe>();
+        List<TypeTier> summoningIngredients = MergeIngredients(curIngredients);
+
+        foreach (var recipe in allRecipes)
         {
-            print("Checking recipe " + recipe.recipeName);
-            List<TypeTier> ttlist = MergeIngredients(recipe.ingredients); // Not debug, rename ttlist to recipeIngredients.
+            List<TypeTier> recipeIngredients = MergeIngredients(recipe.ingredients); // Not debug, rename ttlist to recipeIngredients.
 
-            // Just to see if it merges correctly
-            recipeIngredients.Add(new TestListIngredient());
-            recipeIngredients[i].ingredients = ttlist;
-            i++;
-
-
-
-            if (ttlist.Count > summoningIngredients.Count) 
+            if (recipeIngredients.Count > summoningIngredients.Count) 
             {
                 print("There aren't enough ingredients for this recipe, skipping to next");
                 continue;
             }
 
-            bool matching = MatchingIngredients(summoningIngredients, ttlist);
-            if (matching) 
+            bool ingredientsMatchingRecipe = MatchingIngredients(summoningIngredients, recipeIngredients);
+            if (ingredientsMatchingRecipe) 
             {
                 print("Ingredients matching: " + recipe.recipeName);
-//                return recipe;
                 matchingRecipes.Add(recipe);
             }
         }
         if (matchingRecipes.Count > 0)
         {
-            return matchingRecipes[0];
+            // TODO Figure out if this is better than just returning the first
+            return matchingRecipes[Random.Range(0, matchingRecipes.Count)];
         }
-        // Find out what we have and how much
-        // 
-
-
-       /* if (ingredients.Count < 3) return null;
-
-        foreach (var recipe in recipes) // Go through all recipies
-        {
-            bool matchingRecipe = true;
-            foreach (var ingredient in ingredients) // Go through all ingredients in the summoner
-            {
-                // Check if the recipe contains the ingredient
-                if (!recipe.recipeIngredients.Contains(ingredient))
-                {
-                    matchingRecipe = false;
-                    continue;
-                }
-            }
-            if (matchingRecipe)
-            {
-                return recipe;
-            }
-        }*/
         return null;
     }
 
@@ -110,12 +96,6 @@ public class SummoningTable : MonoBehaviour
         }
         foreach (var item in mer)
         {
-//            TypeTier tt = GetTypeTierByType(item.Key, item.Value);
-//            if (tt)
-//            {
-//                
-//                merged.Add(tt);
-//            }
             TypeTier tt = new TypeTier(item.Key, item.Value);
             merged.Add(tt);
 //            print("Added merged: " + tt.type.typeName + "[" + tt.tier + "]" + UnityEditor.EditorApplication.timeSinceStartup);
@@ -148,21 +128,23 @@ public class SummoningTable : MonoBehaviour
                     }
                     else
                     {
-                        print(string.Format("{0} Tier is less than {1} tier", summoningIng, recipeIng));
-                        return false;
+                        print(string.Format("{0} {2} is less than {1} {3}", summoningIng.type, recipeIng.type, summoningIng.tier, recipeIng.tier));
+//                        return false;
+                        continue;
                     }
                 }
                 else
                 {
-                    print(string.Format("{0} doesn't match {1}", summoningIng.type, recipeIng.type));
-//                    return false;
-//                    matchingCount --;
+//                    print(string.Format("{0} doesn't match {1}", summoningIng.type, recipeIng.type));
+                    // Skip to next ingredient
                     continue;
                 }
             }
         }
-        print("matchingcount: " + matchingCount);
+//        print("matchingcount: " + matchingCount);
+
         if (matchingCount >= recipeIngredients.Count) return true;
+
         return false;
     }
 
@@ -186,10 +168,4 @@ public class SummoningTable : MonoBehaviour
         print(string.Format("couldnt find a matching typetier with {0}({1})", type, tier));
         return null;
     }
-}
-
-[System.Serializable]
-public class TestListIngredient
-{
-    public List<TypeTier> ingredients;
 }
