@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400616}
-  - 114: {fileID: 11488044}
+  - 114: {fileID: 11448638}
   m_Layer: 0
-  m_Name: Fire 4
+  m_Name: Ashes 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11488044
+--- !u!114 &11448638
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -39,11 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Fire
+  ingredientName: Ashes of a Cozy Fire
+  cost: 100
+  tooltip: Ashes of a Cozy Fire
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
-    type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
-    tier: 4
+    type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
+    tier: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -58,26 +60,34 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: tier
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Fire
+      value: Ashes of a Cozy Fire
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
       value: 
-      objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
+      objectReference: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894,
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
       value: 
       objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: tooltip
+      value: Ashes of a Cozy Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138302}
