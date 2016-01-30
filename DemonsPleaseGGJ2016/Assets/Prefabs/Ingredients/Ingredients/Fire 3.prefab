@@ -39,7 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Fire
+  ingredientName: Hellfire
+  cost: 0
+  flavorText: Fires in hell, no surprise there.
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
@@ -62,7 +64,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Fire
+      value: Hellfire
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -78,6 +80,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: flavorText
+      value: Fires in hell, no surprise there.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138302}
