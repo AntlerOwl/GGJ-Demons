@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Summoning : MonoBehaviour
+public class SummoningTable : MonoBehaviour
 {
-    public List<RecipeIngredient> ingredients;
+    public List<TypeTier> ingredients;
     public List<Recipe> recipes;
 
     [ContextMenu("Test combine")]
@@ -27,6 +27,8 @@ public class Summoning : MonoBehaviour
     /// <returns>The best matching recipe to the ingredients. Null if no match.</returns>
     Recipe TryCombine()
     {
+
+
         // Find out what we have and how much
         // 
 
@@ -51,5 +53,30 @@ public class Summoning : MonoBehaviour
             }
         }*/
         return null;
+    }
+
+    List<TypeTier> MergeTypes(List<TypeTier> orig)
+    {
+        List<TypeTier> merged = new List<TypeTier>();
+        Dictionary<ItemType, int> mer = new Dictionary<ItemType, int>();
+        for (int i = 0; i < orig.Count; i ++)
+        {
+            if (mer.ContainsKey(orig[i].type))
+            {
+                mer[orig[i].type] += orig[i].tier;
+            }
+            else
+            {
+                mer.Add(orig[i].type, orig[i].tier);
+            }
+            /*for (int j = 0; j < orig.Count; j ++)
+            {
+                if (orig[i].type == orig[j].type)
+                {
+                    if (mer.ContainsKey(
+                }
+            }*/
+        }
+        return merged;
     }
 }
