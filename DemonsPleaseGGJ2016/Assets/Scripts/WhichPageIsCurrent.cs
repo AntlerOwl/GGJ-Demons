@@ -6,11 +6,15 @@ public class WhichPageIsCurrent : MonoBehaviour
 {
 	public int currentPage = 0;
 	int maxPage = 0;
-	bool bestiaryActive = true;
+	bool bestiaryActive = false;
+    bool summonActive = false;
+    bool phoneActive = false;
 	
 	List<GameObject> pages = new List<GameObject>();
 	public GameObject menuCanvas;
 	public GameObject bestiaryCanvas;
+    public GameObject summoningCanvas;
+    public GameObject phoneCanvas;
 	public GameObject page0;
 	public GameObject page1;
 	public GameObject page2;
@@ -155,5 +159,37 @@ public class WhichPageIsCurrent : MonoBehaviour
 		bestiaryCanvas.SetActive(false);
 		menuCanvas.SetActive(true);
 	}
+
+    //Call this one on the click of the button that activates the Summon BOok
+    public void ActiveSummonerbook()
+    {
+        summonActive = true;
+        summoningCanvas.SetActive(true);
+        menuCanvas.SetActive(false);
+    }
+
+    //Call this one on the click of the button that deactivates the Summon Book
+    public void DeactivateSummonerbook()
+    {
+        summonActive = false;
+        summoningCanvas.SetActive(false);
+        menuCanvas.SetActive(true);
+    }
+
+    //Call this one on the click of the button that activates the Phone
+    public void ActivePhone()
+    {
+        phoneActive = true;
+        phoneCanvas.SetActive(true);
+        menuCanvas.SetActive(false);
+    }
+
+    //Call this one on the click of the button that deactivates the Summon Book
+    public void DeactivatePhone()
+    {
+        phoneActive = false;
+        phoneCanvas.SetActive(false);
+        menuCanvas.SetActive(true);
+    }
 }
 	

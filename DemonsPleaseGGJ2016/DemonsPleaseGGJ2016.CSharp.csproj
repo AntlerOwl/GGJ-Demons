@@ -62,16 +62,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Demon.cs" />
     <Compile Include="Assets\Scripts\FollowMouse.cs" />
     <Compile Include="Assets\Scripts\Ingredient.cs" />
     <Compile Include="Assets\Scripts\ItemType.cs" />
     <Compile Include="Assets\Scripts\Recipe.cs" />
     <Compile Include="Assets\Scripts\RecipeIngredient.cs" />
-    <Compile Include="Assets\Scripts\SummoningTable.cs" />
+    <Compile Include="Assets\Scripts\SummoningManager.cs" />
     <Compile Include="Assets\Scripts\TypeInitializer.cs" />
     <Compile Include="Assets\Scripts\TypeTier.cs" />
+    <Compile Include="Assets\Scripts\UI\UIEndDrag.cs" />
+    <Compile Include="Assets\Scripts\UI\UIIngredientItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIStartDrag.cs" />
+    <Compile Include="Assets\Scripts\UI\UISummonItem.cs" />
     <Compile Include="Assets\Scripts\WhichPageIsCurrent.cs" />
+    <Compile Include="Assets\UIDragManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
