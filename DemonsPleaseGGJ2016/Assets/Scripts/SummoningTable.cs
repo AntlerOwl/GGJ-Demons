@@ -27,7 +27,17 @@ public class SummoningTable : MonoBehaviour
     /// <returns>The best matching recipe to the ingredients. Null if no match.</returns>
     Recipe TryCombine()
     {
-
+        List<TypeTier> mergedIngredients = MergeTypes(ingredients);
+        foreach (var recipe in recipes)
+        {
+            List<TypeTier> recipeIngredients = MergeTypes(recipe.ingredients);
+            bool matching = MatchingIngredients(mergedIngredients, recipeIngredients);
+            if (matching) 
+            {
+                print("Ingredients matching: " + recipe.recipeName);
+                return recipe;
+            }
+        }
 
         // Find out what we have and how much
         // 
@@ -78,5 +88,36 @@ public class SummoningTable : MonoBehaviour
             }*/
         }
         return merged;
+    }
+
+    /// <summary>
+    /// Checks if the ingredients in the two lists match. Check both the types and wheter A's tier is more than B's tier.
+    /// </summary>
+    /// <returns><c>true</c>, if ingredients was matchinged, <c>false</c> otherwise.</returns>
+    /// <param name="a">The alpha component.</param>
+    /// <param name="b">The blue component.</param>
+    bool MatchingIngredients(List<TypeTier> a, List<TypeTier> b)
+    {
+        // Go through all items and compare them to the other items
+        foreach (var itemA in a)
+        {
+            foreach (var itemB in b) 
+            {
+                // Check if the item types match
+                if (itemA.type == itemB.type)
+                {
+                    // If they match, return false if A's tier is less than B's tier
+                    if (itemA.tier < itemB.tier)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
