@@ -4,6 +4,11 @@ using System.Collections;
 public class Ingredient : MonoBehaviour
 {
     public string ingredientName = "Ingredient";
-//    [Range(1, 3)]public int value = 1;
+    public int cost = 0;
+    public string tooltip = "Tooltip";
+    public Sprite icon;
+
+    [Tooltip("A type gameobject and a value for the tier of this ingredient")]
     public TypeTier typeTier;
+
 }
