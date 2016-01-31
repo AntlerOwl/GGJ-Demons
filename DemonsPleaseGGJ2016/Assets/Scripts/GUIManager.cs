@@ -38,7 +38,7 @@ public class GUIManager : MonoBehaviour
     {
         if (id < beastiaryImages.Length)
         {
-            beastiaryImages[id].color = (black) ? Color.black : Color.white;
+           // beastiaryImages[id].color = (black) ? Color.black : Color.white;
         }
     }
 

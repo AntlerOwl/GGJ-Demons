@@ -3133,6 +3133,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 82824fca87d2f4cf494276eb95430599, type: 3}
   upgradeSummonCostText: {fileID: 1689724275}
   upgradeSummonsButton: {fileID: 1135809402}
+  allDemons:
+  - {fileID: 11423470, guid: b7032d9f7bd28471587189d10b606c35, type: 2}
+  - {fileID: 11423470, guid: 5cab796000f764bbb8ed6751d8e901e9, type: 2}
+  - {fileID: 11423470, guid: b5b9a48cb3cc845f7ad848d949d23913, type: 2}
+  - {fileID: 11423470, guid: 5445c80504e35444babd6c18665c2ee8, type: 2}
+  - {fileID: 11423470, guid: 1f099d0e7147743a38215aaee26e1730, type: 2}
+  - {fileID: 11423470, guid: 0aaf48f17b0e6406283e398e892056fc, type: 2}
+  - {fileID: 11423470, guid: 30289243def59423f83a4d4fad5c71a8, type: 2}
+  - {fileID: 11423470, guid: 6ce67279041504fbc9c77b17fb1ea22e, type: 2}
+  - {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272, type: 2}
 --- !u!114 &314904887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,8 +3154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f29c4bab3e0f429ab85e0cd4eb80c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalMoney: 0
-  sellSoulButton: {fileID: 0}
+  totalMoney: 3000
+  sellSoulButton: {fileID: 1003750484}
 --- !u!114 &314904888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3182,6 +3192,16 @@ MonoBehaviour:
     type: 2}
   uiTypeRowPrefab: {fileID: 166118, guid: 6687817d148e0484fbf635c97cbd29d1, type: 2}
   ingredientScrollbar: {fileID: 1936037774}
+  beastiaryImages:
+  - {fileID: 1326291458}
+  - {fileID: 124312214}
+  - {fileID: 352260309}
+  - {fileID: 1658085233}
+  - {fileID: 784599913}
+  - {fileID: 1290578346}
+  - {fileID: 962902337}
+  - {fileID: 969304877}
+  - {fileID: 1908079459}
 --- !u!114 &314904890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8879,8 +8899,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1381035617}
-        m_MethodName: ActiveSummonerbook
+      - m_Target: {fileID: 314904887}
+        m_MethodName: OnSellSoulClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10815,7 +10835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1286730162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12951,7 +12971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14793,7 +14813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1828607450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15809,7 +15829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9705882, g: 0.9705882, b: 0.9705882, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
