@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Chilling Touch
   cost: 400
   flavorText: Yup, just lay your cold hands riiiiight here.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 6c7ec12047926de4ea67b097edf12ca8, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: f9ad556be7f5b1844a9f825fbb734911, type: 2}
     tier: 2
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 6c7ec12047926de4ea67b097edf12ca8,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

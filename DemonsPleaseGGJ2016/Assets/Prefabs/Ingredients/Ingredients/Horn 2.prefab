@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Devil's Horn?
   cost: 300
   flavorText: "That's what it says on the label.\t"
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: ceb485803144b58479c21024b61523a1, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 53981ae8db99e15428008a141f521e72, type: 2}
     tier: 2
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: ceb485803144b58479c21024b61523a1,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

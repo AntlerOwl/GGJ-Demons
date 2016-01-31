@@ -43,7 +43,7 @@ MonoBehaviour:
   cost: 400
   flavorText: It's not recognizable fro whatever it once was. At least you hope it
     hasn't always looked like this.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 21ef5f03420e42a48a98b850f40694cb, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 5e094735427de4643b1becd70c45748e, type: 2}
     tier: 2
@@ -79,7 +79,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 21ef5f03420e42a48a98b850f40694cb,
         type: 3}
     - target: {fileID: 0}
       propertyPath: tooltip

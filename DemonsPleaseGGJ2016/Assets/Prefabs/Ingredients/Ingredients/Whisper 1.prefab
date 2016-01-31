@@ -43,7 +43,7 @@ MonoBehaviour:
   cost: 300
   flavorText: You have to resist reading these, or they're not dead anymore. Hard,
     isn't it?
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   typeTier:
     type: {fileID: 11480348, guid: ff40665742289004a80bd0c32327ebc7, type: 2}
     tier: 1
@@ -75,8 +75,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
-        type: 3}
+      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 0}
       propertyPath: flavorText
       value: You have to resist reading these, or they're not dead anymore. Hard,

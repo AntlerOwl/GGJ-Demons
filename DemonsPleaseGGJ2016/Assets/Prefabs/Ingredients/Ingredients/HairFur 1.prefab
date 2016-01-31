@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Lock of Royal Hair
   cost: 100
   flavorText: Elizabeth owes you a few favours.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: daf4dc0b8c900eb4b94de19dffc9e27a, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: A Painful Truth
   cost: 500
   flavorText: You choose not to dwell on this one.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: d08c4b3b285a66a4eb1d2fa7e5a40762, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: ff40665742289004a80bd0c32327ebc7, type: 2}
     tier: 2
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: d08c4b3b285a66a4eb1d2fa7e5a40762,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Fragment of Vesuvio
   cost: 700
   flavorText: Turns out rocks lie all over the place on mountains.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   typeTier:
     type: {fileID: 11480348, guid: ff77f5102e1fcef42956a5f3714605f3, type: 2}
     tier: 2
@@ -74,8 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
-        type: 3}
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 0}
       propertyPath: flavorText
       value: Turns out rocks lie all over the place on mountains.

@@ -43,7 +43,7 @@ MonoBehaviour:
   cost: 800
   flavorText: It sounds cool, but try hauling a backpack of obsidian all the way from
     Iceland.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: a0f8a04ae088eab49bb0b2d861ff6be1, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: ff77f5102e1fcef42956a5f3714605f3, type: 2}
     tier: 3
@@ -75,7 +75,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: a0f8a04ae088eab49bb0b2d861ff6be1,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
