@@ -41,7 +41,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: A Long Dead Secret
   cost: 300
-  flavorText: poopsies
+  flavorText: You have to resist reading these, or they're not dead anymore. Hard,
+    isn't it?
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: ff40665742289004a80bd0c32327ebc7, type: 2}
@@ -78,7 +79,8 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: poopsies
+      value: You have to resist reading these, or they're not dead anymore. Hard,
+        isn't it?
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: cost
