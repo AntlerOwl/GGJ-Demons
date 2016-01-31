@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     public int totalMoney = 0;
-
+    [SerializeField]private GameObject sellSoulButton;
     public SummoningManager SummoningManager { private set; get; }
     public TooltipController TooltipController { private set; get; }
     public MissionControll MissionControll { private set; get; }
@@ -33,5 +34,10 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void OnSellSoulClick()
+    {
+        
     }
 }
