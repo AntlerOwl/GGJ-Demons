@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Vial of Dog Spit
   cost: 150
-  flavorText: Harvested from your own face after a particularily slavering encounter.
+  flavorText: "Harvested from your own face after a particularly slavering encounter.\t"
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 3792bf35e1e13ae4ba54879531ecdd77, type: 2}
@@ -78,7 +78,7 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: Harvested from your own face after a particularily slavering encounter.
+      value: "Harvested from your own face after a particularly slavering encounter.\t"
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: cost

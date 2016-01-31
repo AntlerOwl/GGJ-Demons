@@ -1719,7 +1719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &595054215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4060,6 +4060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonName: Wraith
   icon: {fileID: 0}
+  worth: 0
 --- !u!4 &1372790687
 Transform:
   m_ObjectHideFlags: 0
@@ -4894,6 +4895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonName: Imp
   icon: {fileID: 0}
+  worth: 0
 --- !u!4 &1662627857
 Transform:
   m_ObjectHideFlags: 0
@@ -5705,6 +5707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonName: Skeletor
   icon: {fileID: 0}
+  worth: 0
 --- !u!4 &1947451997
 Transform:
   m_ObjectHideFlags: 0
