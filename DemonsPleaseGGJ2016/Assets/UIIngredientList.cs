@@ -23,7 +23,7 @@ public class UIIngredientList : MonoBehaviour
             obj.transform.SetParent(transform);
         }
 
-
+        StartCoroutine(LateStart());
     }
 
     [ContextMenu("Init")]
@@ -33,6 +33,12 @@ public class UIIngredientList : MonoBehaviour
         {
             AddIngredient(ingredient);
         }
+    }
+
+    IEnumerator LateStart()
+    {
+        yield return new WaitForEndOfFrame();
+        InitializeIngredients();
     }
 
     public List<ItemType> rowTypes = new List<ItemType>();
