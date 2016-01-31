@@ -430,7 +430,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46600c1a4c9d97b4481bb9ccd4bbaf09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 254a1e842bed16842bfd46132515f77d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1931,7 +1931,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000024253324, y: 0}
-  m_SizeDelta: {x: 0, y: -494}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260066137
 MonoBehaviour:
@@ -2876,7 +2876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &384240152
 Transform:
   m_ObjectHideFlags: 0
@@ -6924,7 +6924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &870658350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7748,10 +7748,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To manifest a Cerberus, you need a solid framework of bone - preferably
-    enough to keep the massive structure going. Failing that, at least each one of
-    its three skulls. To fuel its raging inner flames, the strongest kinds of fire
-    needs to be kept at its core.\r\n"
+  m_Text: "Being huge, you should first ensure that you have enough space to summon
+    a Cerberus. Although many are determined they need their poorly lit ritual-room,
+    open-air rituals can be just as good, and actually much more fun for the entire
+    family. To manifest a Cerberus, you need a solid framework of bone - preferably
+    enough to keep the massive structure going. You must also provide each one of
+    its three skulls. This can be a challenge in regions with a lower ratio of demon-dog
+    skulls, but can be well worth importing. To fuel the beast\u2019s raging inner
+    flames, you need to place the strongest kinds of fire at the core of the ritual.
+    \n\nDo take note that the sheer size of the demon about to be summoned is such
+    that it can take two to six hours to fully manifest, depending on the stability
+    of your connection to Hell.\r\n"
 --- !u!222 &995082370
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7999,7 +8006,7 @@ RectTransform:
   m_Father: {fileID: 180897746}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8423,7 +8430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1146564605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8589,7 +8596,12 @@ MonoBehaviour:
     from a magical circle of the hottest flames, on a pentagram covered with animal
     blood, and with the horn of one of their own number as the focal point. After
     rising from darkness with a roar, the Duke will thank you for your hospitality,
-    and ask what services you are politely requesting of him.\r\n"
+    and ask what services you are politely requesting of him. Do not make the mistake
+    that a Duke of Hell is under your influence. \n\nThey are very much their own
+    demon, but are generally agreeable to aid those less fortunate than them. Their
+    wealth varies wildly, from hundreds of acres of Hellfields, with thousands of
+    Hellcattle, to a single little Hellmanor far out in the countryside in the Hellish
+    Midlands.\r\n"
 --- !u!222 &1154698018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11861,15 +11873,15 @@ MonoBehaviour:
     come from. A mass of eyes and sliminess, they quite simply do not follow the rules
     of what we understand as \u201Clife\u201D. The trail they leave behind often causes
     comparisons to an enormous, somehow slavering threshing machine. The frothing
-    goo one leaves behind seems to attract more, however. \n\nThis is the cause of
-    the expression \u201Cyou catch more Shogglings with MORE FROTHING!\u201D While
-    not obviously carnivores (they don\u2019t eat as much as \u2018absorb\u2019),
-    they have shown a predilection for not only spit and slime, but blood, the insides
+    goo one leaves behind seems to attract more, however. This is the cause of the
+    expression \u201Cyou catch more Shogglings with MORE FROTHING!\u201D While not
+    obviously carnivores (they don\u2019t eat as much as \u2018absorb\u2019), they
+    have shown a predilection for not only spit and slime, but blood, the insides
     of eyes and other soft organic matter. This might be why their eyes seem to follow
     any humans moving around them. Thankfully, any armed group of people should be
-    able to fend off a Shoggling. Don\u2019t let them gather in groups, however, as
-    they might get dangerous. And for goodness sake, never let them grow up. There
-    are reasons Ur was suddenly abandoned two and a half millennia ago.\r\n"
+    able to fend off a Shoggling. \n\nDon\u2019t let them gather in groups, however,
+    as they might get dangerous. And for goodness sake, never let them grow up. There
+    are reasons Ur was suddenly abandoned two and a half millennia ago."
 --- !u!222 &1672002258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12752,7 +12764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1828607450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13873,11 +13885,15 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Tough luck summoning a lich, you\u2019d better get every little detail
-    right. Of course they need a deceased body to inhabit, as well as some kind of
-    powerful magical and preferably shining stone. Anything that has to do with pain
-    or death is also a big draw for them, masochists as they are. The final step in
-    summoning them is to awaken them with the coldest, deadest touch. Enjoy their
-    company, you will have deserved it.\r\n"
+    right. Of course they need a deceased body to inhabit (and it better be \u201Cregulation
+    scary\u201D), as well as some kind of powerful magical and preferably shining
+    stone. Why? They just feel like making it more difficult to summon them, is my
+    guess. \u201CHey, you got any jewels in your ritual component box? No? Too bad.\u201D
+    Of course, they have greater ambitions than torturing a summoner with extreme
+    demands.  \n\nAnything that has to do with pain or death is a big draw for them,
+    the filthy masochists. That\u2019s why such things are important components of
+    their summoning ritual. The final step in summoning them is to awaken them with
+    the coldest, deadest touch. Enjoy their company, you will have deserved it.\r\n"
 --- !u!222 &2001657982
 CanvasRenderer:
   m_ObjectHideFlags: 0
