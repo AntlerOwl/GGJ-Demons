@@ -2455,6 +2455,28 @@ MonoBehaviour:
   allRecipes:
   - {fileID: 11422466, guid: 9a24848267cf8401990d31afe6858c1e, type: 2}
   - {fileID: 11422466, guid: 77c1b1bf9887c48e6b7bde9f88dc0c25, type: 2}
+  - {fileID: 11422466, guid: 9a24848267cf8401990d31afe6858c1e, type: 2}
+  - {fileID: 11422466, guid: 77c1b1bf9887c48e6b7bde9f88dc0c25, type: 2}
+  - {fileID: 11422466, guid: 1248681100d914a0ebf8e16589fc8ee4, type: 2}
+  - {fileID: 11422466, guid: 14c0e03465b3f458690879ca49a75697, type: 2}
+  - {fileID: 11422466, guid: 161da03da3e8045b185bf07776d91ceb, type: 2}
+  - {fileID: 11422466, guid: 17e72365817a743e4b02c4e00d53aabf, type: 2}
+  - {fileID: 11422466, guid: 18c8cb71aecf245e2a266b30c080b6a1, type: 2}
+  - {fileID: 11422466, guid: 2ddc81544338d40319476300431d9b3d, type: 2}
+  - {fileID: 11422466, guid: 40e95c48c9bdc4ec8ae70d8206dcb90f, type: 2}
+  - {fileID: 11422466, guid: 51be2ee9821de4fb88f76dccfe902659, type: 2}
+  - {fileID: 11422466, guid: 8dfd131f6ceba4bf79f223593604b118, type: 2}
+  - {fileID: 11422466, guid: 954f1c45d1339436ba65a186621ab275, type: 2}
+  - {fileID: 11422466, guid: 9dc9a5506aa614542b402174f0998cfd, type: 2}
+  - {fileID: 11422466, guid: a06b960c87ca64dd99f5b545c4577f49, type: 2}
+  - {fileID: 11422466, guid: a41bcee35e13843638cbefa418057dc7, type: 2}
+  - {fileID: 11422466, guid: c47f24ffc2c1646b191712536d7c1c8e, type: 2}
+  - {fileID: 11422466, guid: e11504a6199114f038733a225ece7876, type: 2}
+  - {fileID: 11422466, guid: ea7e9a7d39ec944da9d1c242843828c7, type: 2}
+  - {fileID: 11422466, guid: ee44ecef5a079473cb77ddcc081221e7, type: 2}
+  - {fileID: 11422466, guid: efea5ee0f96e449d687049280f8be30c, type: 2}
+  - {fileID: 11422466, guid: f5bad52cb7afc41799272426ef5dc8d4, type: 2}
+  - {fileID: 11422466, guid: 601d2a6e58d4e4cf78c0ea0eac6a55c0, type: 2}
   allIngredients:
   - {fileID: 11448638, guid: fd7ec960c0a5dd94592492dc481205a2, type: 2}
   - {fileID: 11448638, guid: a52ebae009f5a13418be799b31c20e1d, type: 2}
