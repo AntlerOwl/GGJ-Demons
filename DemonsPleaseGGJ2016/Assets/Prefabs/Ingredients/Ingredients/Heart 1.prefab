@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Heart of Man
   cost: 700
   flavorText: We're all just trying to make a living in this world.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 60c1762f779248c4886ea29392898b79, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

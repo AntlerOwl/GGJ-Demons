@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Hellfire
   cost: 800
   flavorText: Fires in hell, who would have thought?
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: dfbebf61b5b7fc24a83a54d40c90eb95, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 22321197ebbf604488c53d2788f4cde6, type: 2}
     tier: 3
@@ -78,7 +78,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: dfbebf61b5b7fc24a83a54d40c90eb95,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

@@ -43,7 +43,7 @@ MonoBehaviour:
   cost: 100
   flavorText: A nice evening in a comfy chair in front of the fire, followed by a
     night of devil worship.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 00ae2060a2c903147b1a9af7a6e8f441, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
     tier: 1
@@ -79,7 +79,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 00ae2060a2c903147b1a9af7a6e8f441,
         type: 3}
     - target: {fileID: 0}
       propertyPath: tooltip

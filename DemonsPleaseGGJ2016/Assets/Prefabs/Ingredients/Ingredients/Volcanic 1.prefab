@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Sulfur
   cost: 100
   flavorText: Brimstone doesn't have the reputation it used to.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 2df6dead785a86743a136a4269d4a75c, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: ff77f5102e1fcef42956a5f3714605f3, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 2df6dead785a86743a136a4269d4a75c,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

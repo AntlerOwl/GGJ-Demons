@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Leathery Wing
   cost: 100
   flavorText: Your investment in a bat guano farm finally paid off.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: c195241d016f0a546a894f549847cc87, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: f9ad556be7f5b1844a9f825fbb734911, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: c195241d016f0a546a894f549847cc87,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Thorned Rose
   cost: 300
   flavorText: As opposed to a rose without thorns.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: e61280a511daa1f45984e14febafabe2, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 837bf966979ecaa4e8cbf9bdda5211ba, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: e61280a511daa1f45984e14febafabe2,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

@@ -43,7 +43,7 @@ MonoBehaviour:
   cost: 500
   flavorText: "There's no way of verifying their virginal status, but it seems to
     work either way.\t"
-  icon: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b, type: 3}
+  icon: {fileID: 21300000, guid: e9f81854d74e2b242ab204b1325cda64, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 8490d0ca1d4cafe429f540e11fd984c0, type: 2}
     tier: 3
@@ -79,7 +79,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: afceb8e26dd024fe291211d2c0e5681b,
+      objectReference: {fileID: 21300000, guid: e9f81854d74e2b242ab204b1325cda64,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

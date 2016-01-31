@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400616}
   - 114: {fileID: 11471134}
   m_Layer: 0
-  m_Name: Reptile 1
+  m_Name: Reptile 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,13 +39,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Eye of Newt
-  cost: 200
-  flavorText: Just an old term for a herb. Ignore the staring pupil.
-  icon: {fileID: 21300000, guid: e05978d5326798f41924f5da6a085fe1, type: 3}
+  ingredientName: Snake's Spine
+  cost: 3000
+  flavorText: You should worry a little more that you found this just lying on your
+    bathroom floor.
+  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 89bd125902a9f1042b10828fd05b275f, type: 2}
-    tier: 1
+    tier: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -60,7 +61,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Eye of Newt
+      value: Snake's Spine
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -69,20 +70,21 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: e05978d5326798f41924f5da6a085fe1,
+      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: Just an old term for a herb. Ignore the staring pupil.
+      value: You should worry a little more that you found this just lying on your
+        bathroom floor.
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: cost
-      value: 200
+      value: 3000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

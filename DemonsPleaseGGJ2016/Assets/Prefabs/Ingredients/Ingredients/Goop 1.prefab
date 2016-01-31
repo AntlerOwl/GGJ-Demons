@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Vial of Dog Spit
   cost: 150
   flavorText: "Harvested from your own face after a particularly slavering encounter.\t"
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 94525d3cd5b7c694691bbfbcd9c27e06, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 3792bf35e1e13ae4ba54879531ecdd77, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 94525d3cd5b7c694691bbfbcd9c27e06,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

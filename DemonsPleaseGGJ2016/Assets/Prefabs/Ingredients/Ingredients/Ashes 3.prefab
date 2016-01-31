@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400616}
-  - 114: {fileID: 11471134}
+  - 114: {fileID: 11448638}
   m_Layer: 0
-  m_Name: Reptile 1
+  m_Name: Ashes 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11471134
+--- !u!114 &11448638
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -39,13 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Eye of Newt
-  cost: 200
-  flavorText: Just an old term for a herb. Ignore the staring pupil.
-  icon: {fileID: 21300000, guid: e05978d5326798f41924f5da6a085fe1, type: 3}
+  ingredientName: Ashed of an Empire
+  cost: 300
+  flavorText: Still bound to whatever caused the empire to burn in the first place.
+  icon: {fileID: 21300000, guid: 63fc5023e2986554a83305b528cb0115, type: 3}
   typeTier:
-    type: {fileID: 11480348, guid: 89bd125902a9f1042b10828fd05b275f, type: 2}
-    tier: 1
+    type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
+    tier: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -59,30 +59,38 @@ Prefab:
       objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
         type: 2}
     - target: {fileID: 0}
+      propertyPath: tier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Eye of Newt
+      value: Ashed of an Empire
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
       value: 
-      objectReference: {fileID: 11480348, guid: 89bd125902a9f1042b10828fd05b275f,
+      objectReference: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894,
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: e05978d5326798f41924f5da6a085fe1,
+      objectReference: {fileID: 21300000, guid: 63fc5023e2986554a83305b528cb0115,
         type: 3}
     - target: {fileID: 0}
-      propertyPath: flavorText
-      value: Just an old term for a herb. Ignore the staring pupil.
+      propertyPath: tooltip
+      value: Ashes of a Cozy Fire
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: cost
-      value: 200
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flavorText
+      value: Still bound to whatever caused the empire to burn in the first place.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

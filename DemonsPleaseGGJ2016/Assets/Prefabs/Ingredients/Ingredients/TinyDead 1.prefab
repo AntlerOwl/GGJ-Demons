@@ -42,7 +42,7 @@ MonoBehaviour:
   ingredientName: Rat Corpse
   cost: 150
   flavorText: "And in school they called you weird for collecting these.\t"
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: 3b4a2f8f899bf184c85ff0a4726a6018, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 9b05f64328814b74ba0d9bbb173b5b3f, type: 2}
     tier: 1
@@ -74,7 +74,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: 3b4a2f8f899bf184c85ff0a4726a6018,
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText

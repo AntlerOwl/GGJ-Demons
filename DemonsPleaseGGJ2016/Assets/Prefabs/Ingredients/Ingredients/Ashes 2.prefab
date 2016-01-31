@@ -42,10 +42,10 @@ MonoBehaviour:
   ingredientName: Ashes of a Ruinous Fire
   cost: 300
   flavorText: The hard part was convincing the police to let you go at the scene.
-  icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
+  icon: {fileID: 21300000, guid: f34fae128f972d641a62ca686f3c94dd, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
-    tier: 1
+    tier: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -73,12 +73,12 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15,
+      objectReference: {fileID: 21300000, guid: f34fae128f972d641a62ca686f3c94dd,
         type: 3}
     - target: {fileID: 0}
       propertyPath: tooltip
