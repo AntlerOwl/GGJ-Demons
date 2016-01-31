@@ -8,6 +8,7 @@ public class SummoningManager : MonoBehaviour
     public List<Ingredient> ingredientSlots;
     public List<Recipe> allRecipes;
     public List<Ingredient> allIngredients = new List<Ingredient>();
+    public List<ItemType> allTypes = new List<ItemType>();
     public const int MaxTier = 4;
     private List<UISummonItem> summonSlots = new List<UISummonItem>();
     [SerializeField]private Transform summonSlotsParent;
@@ -22,6 +23,30 @@ public class SummoningManager : MonoBehaviour
     void Awake()
     {
         missionControll = GameManager.instance.MissionControll;
+
+        for (int i = 0; i < allTypes.Count; i++)
+        {
+            GameObject obj = Instantiate(allTypes[i].gameObject);
+            ItemType type = obj.GetComponent<ItemType>();
+            type.ID = i;
+            allTypes[i] = type;
+        }
+
+        foreach (var ingredient in allIngredients)
+        {
+            foreach (var type in allTypes)
+            {
+                if (ingredient == null) print("ing == null");
+                if (ingredient.typeTier == null) print("ing.typetier == null");
+                if (ingredient.typeTier.type == null) print("ing.typetier.type == null");
+                if (type == null) print("type == null");
+
+                if (ingredient.typeTier.type.typeName == type.typeName)
+                {
+                    ingredient.typeTier.type = type;
+                }
+            }
+        }
     }
 
     void Start()
@@ -41,6 +66,7 @@ public class SummoningManager : MonoBehaviour
         for (int i = 0; i < summonSlots.Count; i++)
         {
             summonSlots[i].summonSlotId = i;
+            summonSlots[i].iconImage.sprite = GUIManager.instance.emptySprite;
         }
     }
 
@@ -57,11 +83,19 @@ public class SummoningManager : MonoBehaviour
             summonPanel.Activate(recipe.target);
 
             // TODO Clear workbench
+            ClearSummoningTable();
         }
         else
         {
-
             print("No matching recipes");
+        }
+    }
+
+    void ClearSummoningTable()
+    {
+        for (int i = 0; i < summonSlots.Count; i++)
+        {
+            RemoveIngredient(i);
         }
     }
 
@@ -79,6 +113,8 @@ public class SummoningManager : MonoBehaviour
 
     public void RemoveIngredient(int summonSlot)
     {
+        if (!ingredientSlots[summonSlot]) return; // Stop if there aren't any ingredients in this slot
+
         TotalCost -= ingredientSlots[summonSlot].cost;
         ingredientSlots[summonSlot] = null;
         summonSlots[summonSlot].iconImage.sprite = GUIManager.instance.emptySprite;

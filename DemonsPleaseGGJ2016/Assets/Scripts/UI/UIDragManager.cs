@@ -40,6 +40,8 @@ public class UIDragManager : MonoBehaviour
 
     public void BeginDrag(Ingredient ingredient, int fromSummonSlot = -1)
     {
+        
+
         dragImage.gameObject.SetActive(true);
         dragImage.sprite = ingredient.icon;
         curIngredient = ingredient;

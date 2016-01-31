@@ -12,6 +12,8 @@ public class GUIManager : MonoBehaviour
     [SerializeField]private Transform ingredientsParent;
     [SerializeField]private RewardText origRewardText;
     [SerializeField]private Button summonButton;
+    public GameObject uiIngredientItemPrefab;
+    public GameObject uiTypeRowPrefab;
     private SummoningManager summoningManager;
     public static GUIManager instance;
 

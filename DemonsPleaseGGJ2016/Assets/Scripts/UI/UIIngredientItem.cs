@@ -16,6 +16,10 @@ public class UIIngredientItem : UIStartDrag
             iconImage.sprite = image;
             GetComponent<Tooltip>().SetTooltipText(ingredient.ingredientName, ingredient.flavorText);
         }
+        else
+        {
+            iconImage.sprite = GUIManager.instance.emptySprite;
+        }
     }
 
 //    protected override void OnDrag() 

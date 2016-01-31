@@ -113,7 +113,7 @@ public class MissionControll : MonoBehaviour
                 // TODO report that the mission is finished
                 //RemoveMission();
                 print("Mission finiesed!");
-                turnInText.text = string.Format("Turn in [{0}]", curMission.reward);
+                turnInText.text = string.Format("Turn in [${0}]", curMission.reward);
                 discardButtonObject.SetActive(false);
             }
         }
