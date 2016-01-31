@@ -40,11 +40,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Vial of Dog Spit
-  cost: 0
-  flavorText: poopsies
+  cost: 150
+  flavorText: "Harvested from your own face after a particularly slavering encounter.\t"
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
-    type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
+    type: {fileID: 11480348, guid: 3792bf35e1e13ae4ba54879531ecdd77, type: 2}
     tier: 1
 --- !u!1001 &100100000
 Prefab:
@@ -65,7 +65,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: typeTier.type
       value: 
-      objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
+      objectReference: {fileID: 11480348, guid: 3792bf35e1e13ae4ba54879531ecdd77,
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
@@ -78,7 +78,11 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: poopsies
+      value: "Harvested from your own face after a particularly slavering encounter.\t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

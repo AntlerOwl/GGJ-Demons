@@ -40,11 +40,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Kid's Horn
-  cost: 0
-  flavorText: poopsies
+  cost: 150
+  flavorText: Why can't it be from a grown goat? Their wide eyes make even you feel
+    bad.
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
-    type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
+    type: {fileID: 11480348, guid: 53981ae8db99e15428008a141f521e72, type: 2}
     tier: 1
 --- !u!1001 &100100000
 Prefab:
@@ -65,7 +66,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: typeTier.type
       value: 
-      objectReference: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff,
+      objectReference: {fileID: 11480348, guid: 53981ae8db99e15428008a141f521e72,
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
@@ -78,7 +79,12 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: poopsies
+      value: Why can't it be from a grown goat? Their wide eyes make even you feel
+        bad.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

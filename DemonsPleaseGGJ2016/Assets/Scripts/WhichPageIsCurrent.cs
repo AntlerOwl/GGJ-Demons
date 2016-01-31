@@ -24,7 +24,6 @@ public class WhichPageIsCurrent : MonoBehaviour
 	public GameObject page6;
 	public GameObject page7;
 	public GameObject page8;
-	public GameObject page9;
 
 	private AudioSource audioOut;
 
@@ -68,9 +67,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		if (page8){
 			pages.Add (page8);
 		}
-		if (page9){
-			pages.Add (page9);
-		}
+		
 		foreach (GameObject page in pages){
 			maxPage++;
 		}
@@ -107,9 +104,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		if (bestiaryActive == true && currentPage == 8){
 			page8.SetActive(true);
 		}
-		if (bestiaryActive == true && currentPage == 9){
-			page9.SetActive(true);
-		}
+		
 
 		//Deactivates the pages that shouldn't be active
 		if (currentPage != 0){
@@ -139,9 +134,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		if (currentPage != 8){
 			page8.SetActive(false);
 		}
-		if (currentPage != 9){
-			page9.SetActive(false);
-		}
+	
 	}
 
 	//Call this on the click of the button assigned to the left side of the book

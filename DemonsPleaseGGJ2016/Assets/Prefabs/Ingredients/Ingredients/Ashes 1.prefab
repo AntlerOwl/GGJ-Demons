@@ -41,7 +41,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Ashes of a Cozy Fire
   cost: 100
-  tooltip: Ashes of a Cozy Fire
+  flavorText: A nice evening in a comfy chair in front of the fire, followed by a
+    night of devil worship.
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
@@ -87,6 +88,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: cost
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flavorText
+      value: A nice evening in a comfy chair in front of the fire, followed by a night
+        of devil worship.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

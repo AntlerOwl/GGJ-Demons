@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Bones
-  cost: 0
-  flavorText: 
+  ingredientName: '"Human" Skeleton'
+  cost: 500
+  flavorText: "The bones fit perfectly together, but the shape they make...\t"
   icon: {fileID: 21300000, guid: 7cb070fc34644483284692404812f801, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 7d9d0668a3079bb4fb73312c48d5b9ec, type: 2}
@@ -64,7 +64,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Bones
+      value: '"Human" Skeleton'
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -80,6 +80,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 7cb070fc34644483284692404812f801,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flavorText
+      value: "The bones fit perfectly together, but the shape they make...\t"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138302}
