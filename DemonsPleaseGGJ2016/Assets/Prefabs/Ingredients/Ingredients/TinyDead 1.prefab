@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Squirrel Corpse
+  ingredientName: Rat Corpse
   cost: 100
   flavorText: "And in school they called you weird for collecting these.\t"
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
@@ -60,7 +60,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Squirrel Corpse
+      value: Rat Corpse
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
