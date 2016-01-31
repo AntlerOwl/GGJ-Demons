@@ -22,6 +22,7 @@ public class SummoningManager : MonoBehaviour
     [SerializeField]private Sprite[] summonCircleSprites;
     [SerializeField]private Text upgradeSummonCostText;
     [SerializeField]private Button upgradeSummonsButton;
+    [SerializeField]private Demon[] allDemons;
     private MissionControll missionControll;
 
     public int TotalCost { 
@@ -32,6 +33,12 @@ public class SummoningManager : MonoBehaviour
 
     void Awake()
     {
+        for (int i = 0; i < allDemons.Length; i++)
+        {
+            allDemons[i].demonId = i;
+            allDemons[i].hasSummoned = false;
+        }
+
         missionControll = GameManager.instance.MissionControll;
 
         for (int i = 0; i < allTypes.Count; i++)

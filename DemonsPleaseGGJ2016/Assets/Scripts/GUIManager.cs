@@ -17,6 +17,7 @@ public class GUIManager : MonoBehaviour
     private SummoningManager summoningManager;
     [SerializeField]private Scrollbar ingredientScrollbar;
     public static GUIManager instance;
+    public Image[] beastiaryImages;
 
     void Awake()
     {
@@ -26,7 +27,24 @@ public class GUIManager : MonoBehaviour
 
     void Start()
     {
+        for (int i = 0; i < beastiaryImages.Length; i++)
+        {
+            SetBeastiaryImageColor(i, true);
+        }
         InitializeIngredientUI();
+    }
+
+    public void SetBeastiaryImageColor(int id, bool black)
+    {
+        if (id < beastiaryImages.Length)
+        {
+            beastiaryImages[id].color = (black) ? Color.black : Color.white;
+        }
+    }
+
+    public void UpdateBeastiaryDemonColor(Demon demon)
+    {
+        SetBeastiaryImageColor(demon.demonId, demon.hasSummoned);
     }
 
     void InitializeIngredientUI()
