@@ -87,7 +87,9 @@
     <Compile Include="Assets\Scripts\UI\UISummonItem.cs" />
     <Compile Include="Assets\Scripts\UI\UISummonPanel.cs" />
     <Compile Include="Assets\Scripts\WhichPageIsCurrent.cs" />
+    <Compile Include="Assets\UIIngredientList.cs" />
     <Compile Include="Assets\UIMissionParameterItem.cs" />
+    <Compile Include="Assets\UITypeRow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
