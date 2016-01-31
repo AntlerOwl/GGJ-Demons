@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SummoningManager : MonoBehaviour
 {
+    [SerializeField]private int upgradeSummoningCost = 4000;
     [SerializeField]private UISummonPanel summonPanel;
     public List<Ingredient> ingredientSlots;
     public List<Recipe> allRecipes;
@@ -102,9 +103,18 @@ public class SummoningManager : MonoBehaviour
 //            summonSlots[i].summonSlotId = i;
 //            summonSlots[i].iconImage.sprite = GUIManager.instance.emptySprite;
 //        }
-//        summonThreeSlots = new List<UISummonItem>(summonThreeSlotsParent.GetComponentsInChildren<UISummonItem>());
-//        summonFiveSlots = new List<UISummonItem>(summonFiveSlotsParent.GetComponentsInChildren<UISummonItem>());
+        summonThreeSlots = new List<UISummonItem>(summonThreeSlotsParent.GetComponentsInChildren<UISummonItem>());
+        summonFiveSlots = new List<UISummonItem>(summonFiveSlotsParent.GetComponentsInChildren<UISummonItem>());
+        for (int i = 0; i < summonFiveSlots.Count; i++)
+        {
+            if (i < summonThreeSlots.Count)
+            {
+                summonThreeSlots[i].summonSlotId = i;
+            }
+            summonFiveSlots[i].summonSlotId = i;
+        }
 
+        SetSummonSlotGroup(false);
     }
 
     public void OnSummonClick()
@@ -128,9 +138,31 @@ public class SummoningManager : MonoBehaviour
         }
     }
 
+    public void OnUpgradeClick()
+    {
+        GameManager.instance.ChangeTotalMoney(-upgradeSummoningCost);
+        SetSummonSlotGroup(true);
+    }
+
     void SetSummonSlotGroup(bool fromThreeToFive)
     {
-        
+        if (fromThreeToFive)
+        {
+            summonSlots = new List<UISummonItem>();
+            for (int i = 0; i < summonFiveSlots.Count; i++)
+            {
+                summonSlots.Add(summonFiveSlots[i]);
+            }
+        }
+        else
+        {
+            summonSlots = new List<UISummonItem>();
+            for (int i = 0; i < summonThreeSlots.Count; i++)
+            {
+                summonSlots.Add(summonThreeSlots[i]);
+            }
+        }
+        summonCircleImage.sprite = (fromThreeToFive) ? summonCircleSprites[1] : summonCircleSprites[0];
     }
 
     void ClearSummoningTable()

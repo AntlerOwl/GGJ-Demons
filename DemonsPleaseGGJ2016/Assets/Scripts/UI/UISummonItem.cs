@@ -53,7 +53,6 @@ public class UISummonItem : UIEndDrag, IDragHandler, IBeginDragHandler
             title = ingredient.ingredientName;
             flavor = ingredient.flavorText;
         }
-        print("Updating tooltip");
         tooltip.SetTipActive(ingredient);
         tooltip.SetTooltipText(title, flavor);
     }
