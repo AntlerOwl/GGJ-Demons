@@ -6,9 +6,12 @@ public class UIIngredientItem : UIStartDrag
 {
     public Ingredient ingredient;
     [SerializeField]private Image iconImage;
+    private Tooltip tooltip;
 
     public void Init(Ingredient ingred)
     {
+        if (!tooltip) tooltip = GetComponent<Tooltip>();
+
         ingredient = ingred;
         if (ingredient)
         {
@@ -19,6 +22,11 @@ public class UIIngredientItem : UIStartDrag
         else
         {
             iconImage.sprite = GUIManager.instance.emptySprite;
+        }
+
+        if (tooltip)
+        {
+            tooltip.SetTipActive(ingredient);
         }
     }
 

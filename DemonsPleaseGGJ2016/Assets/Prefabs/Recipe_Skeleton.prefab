@@ -42,8 +42,8 @@ MonoBehaviour:
   recipeName: Skeleton recipe
   target: {fileID: 11423470, guid: 86a290340aca84709a162a794c7da199, type: 2}
   ingredients:
-  - {fileID: 11453482, guid: 5d8c3f786e65048a9b755cba0a81f153, type: 2}
   - {fileID: 11453482, guid: 4c53c19ece8034b10a05ef89be4dd215, type: 2}
+  - {fileID: 11453482, guid: 5d8c3f786e65048a9b755cba0a81f153, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -71,12 +71,12 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[0]
       value: 
-      objectReference: {fileID: 11453482, guid: 5d8c3f786e65048a9b755cba0a81f153,
+      objectReference: {fileID: 11453482, guid: 4c53c19ece8034b10a05ef89be4dd215,
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[1]
       value: 
-      objectReference: {fileID: 11453482, guid: 4c53c19ece8034b10a05ef89be4dd215,
+      objectReference: {fileID: 11453482, guid: 5d8c3f786e65048a9b755cba0a81f153,
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[2]

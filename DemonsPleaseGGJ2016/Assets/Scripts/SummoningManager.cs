@@ -44,16 +44,35 @@ public class SummoningManager : MonoBehaviour
             foreach (var type in allTypes)
             {
                 
-                if (ingredient == null) print("ing == null");
-                if (ingredient.typeTier == null) print("ing.typetier == null");
-                if (ingredient.typeTier.type == null) print("ing.typetier.type == null");
-                if (type == null) print("type == null");
+//                if (ingredient == null) print("ing == null");
+//                if (ingredient.typeTier == null) print("ing.typetier == null");
+//                if (ingredient.typeTier.type == null) print("ing.typetier.type == null");
+//                if (type == null) print("type == null");
 
                 if (ingredient.typeTier.type.typeName == type.typeName)
                 {
                     ingredient.typeTier.type = type;
                 }
             }
+        }
+
+        for (int i = 0; i < allRecipes.Count; i++)
+        {
+            GameObject obj = Instantiate(allRecipes[i].gameObject);
+            Recipe recipe = obj.GetComponent<Recipe>();
+
+            for (int j = 0; j < recipe.ingredients.Count; j++) 
+            {
+                foreach (var ingred in allIngredients)
+                {
+                    if (recipe.ingredients[j].ingredientName == ingred.ingredientName)
+                    {
+                        recipe.ingredients[j] = ingred;
+                    }
+                }
+            }
+
+            allRecipes[i] = recipe;
         }
     }
 
@@ -119,13 +138,14 @@ public class SummoningManager : MonoBehaviour
         summonSlots[summonSlotId].iconImage.sprite = ingredient.icon;
     }
 
-    public void RemoveIngredient(int summonSlot)
+    public void RemoveIngredient(int summonSlotId)
     {
-        if (!ingredientSlots[summonSlot]) return; // Stop if there aren't any ingredients in this slot
+        if (!ingredientSlots[summonSlotId]) return; // Stop if there aren't any ingredients in this slot
 
-        TotalCost -= ingredientSlots[summonSlot].cost;
-        ingredientSlots[summonSlot] = null;
-        summonSlots[summonSlot].iconImage.sprite = GUIManager.instance.emptySprite;
+        TotalCost -= ingredientSlots[summonSlotId].cost;
+        ingredientSlots[summonSlotId] = null;
+        summonSlots[summonSlotId].iconImage.sprite = GUIManager.instance.emptySprite;
+        summonSlots[summonSlotId].UpdateTooltip();
     }
 
     /// <summary>

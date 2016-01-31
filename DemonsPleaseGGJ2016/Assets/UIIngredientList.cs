@@ -52,9 +52,9 @@ public class UIIngredientList : MonoBehaviour
             rowTypes.Add(typeRows[i].type);
             ingTypes.Add(ingredient.typeTier.type);
 
-            print(typeRows[i].type.typeName + "{" + typeRows[i].type.ID + "}" + " == " 
-                + ingredient.typeTier.type.typeName + "(" + ingredient.typeTier.type.ID + "): " 
-                + (typeRows[i].type.ID == ingredient.typeTier.type.ID));
+//            print(typeRows[i].type.typeName + "{" + typeRows[i].type.ID + "}" + " == " 
+//                + ingredient.typeTier.type.typeName + "(" + ingredient.typeTier.type.ID + "): " 
+//                + (typeRows[i].type.ID == ingredient.typeTier.type.ID));
             if (typeRows[i].type == ingredient.typeTier.type)
             //if (item.type.ID == ingredient.typeTier.type.ID)
 //            if (typeRows[i].type.ID == ingredient.typeTier.type.ID)

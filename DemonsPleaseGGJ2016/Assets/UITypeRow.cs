@@ -20,8 +20,8 @@ public class UITypeRow : MonoBehaviour
 
     public void AddIngredient(Ingredient ingredient)
     {
-        print(type + "-" + ingredients.Count);
-        print("Adding with index " + (ingredient.typeTier.tier-1));
+//        print(type + "-" + ingredients.Count);
+//        print("Adding with index " + (ingredient.typeTier.tier-1));
         ingredients[ingredient.typeTier.tier-1].Init(ingredient);
     }
 }
