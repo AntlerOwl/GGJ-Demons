@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DebugController.cs" />
+     <Compile Include="Assets\RewardText.cs" />
      <Compile Include="Assets\Scripts\Demon.cs" />
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
      <Compile Include="Assets\Scripts\GUIManager.cs" />
@@ -68,7 +70,9 @@
      <Compile Include="Assets\Scripts\UI\UISummonItem.cs" />
      <Compile Include="Assets\Scripts\UI\UISummonPanel.cs" />
      <Compile Include="Assets\Scripts\WhichPageIsCurrent.cs" />
+     <Compile Include="Assets\UIIngredientList.cs" />
      <Compile Include="Assets\UIMissionParameterItem.cs" />
+     <Compile Include="Assets\UITypeRow.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

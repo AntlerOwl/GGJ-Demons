@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 483432}
   - 114: {fileID: 11423470}
   m_Layer: 0
-  m_Name: Demon_Imp
+  m_Name: Demon_Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,8 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d68f0942eb784591b5f3b05d9d74d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonName: Imp
-  icon: {fileID: 21300000, guid: 22e0851d2cc254006a060578bbffa0ca, type: 3}
+  demonName: Skeleton
+  icon: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e, type: 3}
+  worth: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -49,9 +50,13 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: demonName
+      value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 22e0851d2cc254006a060578bbffa0ca,
+      objectReference: {fileID: 21300000, guid: 4d7551c10dbf94d3685a4d98298d4b3e,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
