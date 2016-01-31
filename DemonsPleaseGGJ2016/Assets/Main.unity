@@ -1931,7 +1931,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000024253324, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260066137
 MonoBehaviour:
@@ -2131,16 +2131,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Imps can be found in all nine circles of Hell. They are drawn to fire,
-    and have been known cook their food, stolen or donated blood from humans, mice
-    and other small rodents. \r\nIn the 1600\u2019s Imps summoned and left to their
-    own devices were observed to burn down residential buildings for the purpose of
-    creating nests in the ashes. \n\nA summoned imp will require a steady supply of
-    Sulfur to let it maintain its corporeal form on our plane of existence. During
-    the 18th Dynasty in Egypt, 1400 B.C, Pharaoh Thutmose III was strongly rumored
-    to have kept an imp as a court jester. Set apart from their demonic siblings,
-    Imps cannot be said to be evil in nature, but rather seem to derive pleasure from
-    annoying humans and demons alike."
+  m_Text: "Imps are drawn to fire, and have been known to eat small rodents and birds.
+    They won\u2019t kill for food, though, so a summoner can feel relatively safe
+    with them around. \r\nIn the 1600\u2019s Imps summoned and left to their own devices
+    were observed to burn down residential buildings for the purpose of creating nests
+    in the ashes of the still cindering ruin. \nThis started the practice of providing
+    ash-nests for them. A summoned imp will always require a steady supply of Sulfur
+    to let it maintain its corporeal form on our plane of existence. During the 18th
+    Dynasty in Egypt, 1400 B.C, Pharaoh Thutmose III was strongly rumored to have
+    kept an imp as a court jester. Set apart from their demonic siblings, Imps seem
+    to derive pleasure from annoying humans and demons alike."
 --- !u!222 &276409560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2875,7 +2875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &384240152
 Transform:
   m_ObjectHideFlags: 0
@@ -6529,7 +6529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &842388060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6923,7 +6923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &870658350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7998,7 +7998,7 @@ RectTransform:
   m_Father: {fileID: 180897746}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8422,7 +8422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1146564605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10310,11 +10310,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lowly denizens of Hell. The Imps are a submissive and mischievous demonic
-    race. Frequently kept by sorcerers as familiars, as they are low maintenance and
-    obedient compared to other demonic entities. While not being useful for more than
-    light housekeeping and lab assistance, they are still very popular among younger
-    Summoners. \r\n"
+  m_Text: "Imps are a submissive and mischievous denizens of Hell. Frequently summoned
+    to be kept by sorcerers as familiars, they are far more obedient than most demonic
+    entities. While they can be kept as cleaners and lab assistants, an unsupervised
+    imp will run wild with mischievous pranks.\r\n"
 --- !u!222 &1367633934
 CanvasRenderer:
   m_ObjectHideFlags: 0
