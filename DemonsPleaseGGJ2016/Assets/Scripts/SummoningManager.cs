@@ -32,10 +32,18 @@ public class SummoningManager : MonoBehaviour
             allTypes[i] = type;
         }
 
+        for (int i = 0; i < allIngredients.Count; i ++)
+        {
+            GameObject obj = Instantiate(allIngredients[i].gameObject);
+            Ingredient ing = obj.GetComponent<Ingredient>();
+            allIngredients[i] = ing;
+        }
+
         foreach (var ingredient in allIngredients)
         {
             foreach (var type in allTypes)
             {
+                
                 if (ingredient == null) print("ing == null");
                 if (ingredient.typeTier == null) print("ing.typetier == null");
                 if (ingredient.typeTier.type == null) print("ing.typetier.type == null");
