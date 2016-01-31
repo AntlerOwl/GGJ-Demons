@@ -46,6 +46,8 @@ public class UIIngredientList : MonoBehaviour
 
     public void AddIngredient(Ingredient ingredient)
     {
+        if (!ingredient) return;
+
         //foreach (var item in typeRows)
         for (int i = 0; i < typeRows.Count; i ++)
         {

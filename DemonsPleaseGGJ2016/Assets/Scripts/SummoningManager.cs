@@ -78,6 +78,8 @@ public class SummoningManager : MonoBehaviour
             {
                 foreach (var ingred in allIngredients)
                 {
+                    if (!ingred) continue;
+
                     if (recipe.ingredients[j].ingredientName == ingred.ingredientName)
                     {
                         recipe.ingredients[j] = ingred;

@@ -4,7 +4,7 @@ using System.Collections;
 public class ItemType : MonoBehaviour
 {
     public string typeName = "Type";
-    public int ID = 0;
+    [HideInInspector]public int ID = 0;
 
     public void Init(string type)
     {
