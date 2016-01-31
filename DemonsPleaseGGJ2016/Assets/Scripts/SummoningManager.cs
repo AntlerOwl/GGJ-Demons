@@ -20,6 +20,8 @@ public class SummoningManager : MonoBehaviour
     [SerializeField]private Transform summonFiveSlotsParent;
     [SerializeField]private Image summonCircleImage; 
     [SerializeField]private Sprite[] summonCircleSprites;
+    [SerializeField]private Text upgradeSummonCostText;
+    [SerializeField]private Button upgradeSummonsButton;
     private MissionControll missionControll;
 
     public int TotalCost { 
@@ -42,6 +44,8 @@ public class SummoningManager : MonoBehaviour
 
         for (int i = 0; i < allIngredients.Count; i ++)
         {
+            if (!allIngredients[i]) continue;
+
             GameObject obj = Instantiate(allIngredients[i].gameObject);
             Ingredient ing = obj.GetComponent<Ingredient>();
             allIngredients[i] = ing;
@@ -49,9 +53,10 @@ public class SummoningManager : MonoBehaviour
 
         foreach (var ingredient in allIngredients)
         {
+            if (!ingredient) continue;
+
             foreach (var type in allTypes)
             {
-                
 //                if (ingredient == null) print("ing == null");
 //                if (ingredient.typeTier == null) print("ing.typetier == null");
 //                if (ingredient.typeTier.type == null) print("ing.typetier.type == null");
@@ -115,6 +120,8 @@ public class SummoningManager : MonoBehaviour
         }
 
         SetSummonSlotGroup(false);
+
+        upgradeSummonCostText.text = "$" + upgradeSummoningCost;
     }
 
     public void OnSummonClick()
@@ -153,6 +160,9 @@ public class SummoningManager : MonoBehaviour
             {
                 summonSlots.Add(summonFiveSlots[i]);
             }
+
+            upgradeSummonsButton.gameObject.SetActive(false);
+            upgradeSummonCostText.gameObject.SetActive(false);
         }
         else
         {
