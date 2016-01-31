@@ -14,7 +14,6 @@ public class UIStartDrag : MonoBehaviour, IBeginDragHandler, IDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         // start mouse follow
-        print("OnDrag");
         if (image)
         {
             UIDragManager.instance.SetPosition();

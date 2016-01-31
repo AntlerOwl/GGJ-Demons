@@ -7,7 +7,6 @@ public class UIEndDrag : MonoBehaviour, IDropHandler, IEndDragHandler
     public void OnDrop(PointerEventData eventData)
     {
         // stop mouse follow
-        print("drop");
         OnEndDrag();
     }
 

@@ -7,11 +7,22 @@ public class SummoningManager : MonoBehaviour
     [SerializeField]private UISummonPanel summonPanel;
     public List<Ingredient> ingredientSlots;
     public List<Recipe> allRecipes;
-    [Tooltip("List of all ingredients availible")]
     public List<Ingredient> allIngredients = new List<Ingredient>();
     public const int MaxTier = 4;
     private List<UISummonItem> summonSlots = new List<UISummonItem>();
     [SerializeField]private Transform summonSlotsParent;
+    private MissionControll missionControll;
+
+    public int TotalCost { 
+        get { return totalCost; } 
+        set { totalCost = value; GUIManager.instance.UpdateTotalSummonCostDisplay(totalCost); }
+    }
+    private int totalCost;
+
+    void Awake()
+    {
+        missionControll = GameManager.instance.MissionControll;
+    }
 
     void Start()
     {
@@ -38,19 +49,14 @@ public class SummoningManager : MonoBehaviour
         Recipe recipe = TryCombine();
         if (recipe != null)
         {
-            print("Results: " + recipe.target.demonName);
-            // TODO Sum up cost and see if we have enough
-            int totalSum = 0;
-            foreach (var item in ingredientSlots)
-            {
-                if (item)
-                {
-                    totalSum += item.cost;
-                }
-            }
-            print("Total sum: " + totalSum);
+//            print("Results: " + recipe.target.demonName);
 
-            summonPanel.Activate(recipe.target.icon);
+            GameManager.instance.ChangeTotalMoney(-TotalCost);
+
+            missionControll.OnMadeDemon(recipe.target);
+            summonPanel.Activate(recipe.target);
+
+            // TODO Clear workbench
         }
         else
         {
@@ -61,11 +67,19 @@ public class SummoningManager : MonoBehaviour
 
     public void AddIngredient(Ingredient ingredient, int summonSlotId)
     {
+        if (ingredientSlots[summonSlotId])
+        {
+            RemoveIngredient(summonSlotId);
+        }
+
         ingredientSlots[summonSlotId] = ingredient;
+        TotalCost += ingredient.cost;
+        summonSlots[summonSlotId].iconImage.sprite = ingredient.icon;
     }
 
     public void RemoveIngredient(int summonSlot)
     {
+        TotalCost -= ingredientSlots[summonSlot].cost;
         ingredientSlots[summonSlot] = null;
         summonSlots[summonSlot].iconImage.sprite = GUIManager.instance.emptySprite;
     }
