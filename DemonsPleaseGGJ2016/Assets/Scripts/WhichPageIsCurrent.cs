@@ -150,6 +150,7 @@ public class WhichPageIsCurrent : MonoBehaviour
 		if (currentPage < maxPage){
 			currentPage = currentPage + 1;
 			audioOut.PlayOneShot(flipPage);
+            print("hello hello");
 		}
 	}
 
