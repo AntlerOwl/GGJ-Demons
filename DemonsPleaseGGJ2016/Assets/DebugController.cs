@@ -7,7 +7,7 @@ public class DebugController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            GameManager.instance.ChangeTotalMoney(250);
+            GameManager.instance.ChangeTotalMoney(1000);
         }
     }
 }

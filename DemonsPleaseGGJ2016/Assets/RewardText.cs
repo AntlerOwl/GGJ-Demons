@@ -20,13 +20,13 @@ public class RewardText : MonoBehaviour
         transform.position += Vector3.up * speed * Time.deltaTime;
     }
 
-    public void Initialize(string text, Color color, Vector3 pos)//, Transform parent)
+    public void Initialize(string text, Color color, Vector3 pos, Transform parent)
     {
         // Set the text
         textReward.text = text;
         textReward.color = color;
         // Set the parent and position the object
-        //transform.SetParent (parent, false);
+        transform.SetParent(parent, false);
         transform.position = origPos.position;
         // Activate
         gameObject.SetActive (true);

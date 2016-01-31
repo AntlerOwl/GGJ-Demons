@@ -124,6 +124,7 @@ public class SummoningManager : MonoBehaviour
         SetSummonSlotGroup(false);
 
         upgradeSummonCostText.text = "$" + upgradeSummoningCost;
+        UpdateUpgradeSummonsButtonInteractable();
     }
 
     public void OnSummonClick()
@@ -155,6 +156,7 @@ public class SummoningManager : MonoBehaviour
 
     void SetSummonSlotGroup(bool fromThreeToFive)
     {
+        ClearSummoningTable();
         if (fromThreeToFive)
         {
             summonSlots = new List<UISummonItem>();
@@ -174,7 +176,14 @@ public class SummoningManager : MonoBehaviour
                 summonSlots.Add(summonThreeSlots[i]);
             }
         }
+        summonThreeSlotsParent.gameObject.SetActive(!fromThreeToFive);
+        summonFiveSlotsParent.gameObject.SetActive(fromThreeToFive);
         summonCircleImage.sprite = (fromThreeToFive) ? summonCircleSprites[1] : summonCircleSprites[0];
+    }
+
+    public void UpdateUpgradeSummonsButtonInteractable()
+    {
+        upgradeSummonsButton.interactable = upgradeSummoningCost <= GameManager.instance.totalMoney;
     }
 
     void ClearSummoningTable()

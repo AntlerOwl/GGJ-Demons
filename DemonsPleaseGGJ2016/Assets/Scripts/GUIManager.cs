@@ -51,6 +51,7 @@ public class GUIManager : MonoBehaviour
         // TODO Display textlabel with amt, prefix and color
         PopText(prefix + amt, color);
         UpdateSummonButtonActive();
+        summoningManager.UpdateUpgradeSummonsButtonInteractable();
     }
 
     private List<RewardText> rTexts = new List<RewardText>();
@@ -58,7 +59,7 @@ public class GUIManager : MonoBehaviour
     {
         GameObject obj = Instantiate(origRewardText.gameObject);
         RewardText rText = obj.GetComponent<RewardText>();
-        rText.Initialize(text, color, totalMoneyText.transform.position);
+        rText.Initialize(text, color, totalMoneyText.transform.position, origRewardText.transform.parent);
         rText.transform.SetParent(origRewardText.transform.parent);
         obj.SetActive(true);
     }
