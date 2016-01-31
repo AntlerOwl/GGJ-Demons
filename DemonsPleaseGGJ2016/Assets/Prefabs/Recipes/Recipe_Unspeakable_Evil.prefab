@@ -39,12 +39,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda1c6fb373024b66810444053c98e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipeName: Succubus recipe 3
-  target: {fileID: 11423470, guid: 5445c80504e35444babd6c18665c2ee8, type: 2}
+  recipeName: Unspeakable Evil recipe 1
+  target: {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272, type: 2}
   ingredients:
-  - {fileID: 11453482, guid: 4371e2046e2777c41a37b99252ff9ed7, type: 2}
-  - {fileID: 11471134, guid: 139f746c039283d41a2b35d8fa1937df, type: 2}
-  - {fileID: 11471134, guid: 519cce7ade43d8143aa91ef010678138, type: 2}
+  - {fileID: 11471134, guid: 8c16ee2526caa0246893679b247273b4, type: 2}
+  - {fileID: 11471134, guid: f91b091c9caf80b499acb347b8902f52, type: 2}
+  - {fileID: 11448638, guid: 8a06dc18a7ac460419f71f0656b5ed35, type: 2}
+  - {fileID: 11471134, guid: 0e43389211c74624e808a92b30bac347, type: 2}
+  - {fileID: 11471134, guid: c18af7febc914574a978686ab75a0616, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -54,16 +56,16 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: ingredients.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: target
       value: 
-      objectReference: {fileID: 11423470, guid: 5445c80504e35444babd6c18665c2ee8,
+      objectReference: {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272,
         type: 2}
     - target: {fileID: 0}
       propertyPath: recipeName
-      value: Succubus recipe 3
+      value: Unspeakable Evil recipe 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
@@ -72,17 +74,27 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[0]
       value: 
-      objectReference: {fileID: 11453482, guid: 4371e2046e2777c41a37b99252ff9ed7,
+      objectReference: {fileID: 11471134, guid: 8c16ee2526caa0246893679b247273b4,
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[1]
       value: 
-      objectReference: {fileID: 11471134, guid: 139f746c039283d41a2b35d8fa1937df,
+      objectReference: {fileID: 11471134, guid: f91b091c9caf80b499acb347b8902f52,
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredients.Array.data[2]
       value: 
-      objectReference: {fileID: 11471134, guid: 519cce7ade43d8143aa91ef010678138,
+      objectReference: {fileID: 11448638, guid: 8a06dc18a7ac460419f71f0656b5ed35,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: ingredients.Array.data[3]
+      value: 
+      objectReference: {fileID: 11471134, guid: 0e43389211c74624e808a92b30bac347,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: ingredients.Array.data[4]
+      value: 
+      objectReference: {fileID: 11471134, guid: c18af7febc914574a978686ab75a0616,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

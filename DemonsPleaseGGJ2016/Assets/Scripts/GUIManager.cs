@@ -15,6 +15,7 @@ public class GUIManager : MonoBehaviour
     public GameObject uiIngredientItemPrefab;
     public GameObject uiTypeRowPrefab;
     private SummoningManager summoningManager;
+    [SerializeField]private Scrollbar ingredientScrollbar;
     public static GUIManager instance;
 
     void Awake()
@@ -36,6 +37,13 @@ public class GUIManager : MonoBehaviour
             obj.GetComponent<UIIngredientItem>().Init(ingred);
             obj.transform.SetParent(ingredientsParent);
         }
+        StartCoroutine(LateStart());
+    }
+
+    IEnumerator LateStart()
+    {
+        yield return new WaitForEndOfFrame();
+        ingredientScrollbar.value = 1;
     }
 
     public void OnMoneyChange(int amt)
