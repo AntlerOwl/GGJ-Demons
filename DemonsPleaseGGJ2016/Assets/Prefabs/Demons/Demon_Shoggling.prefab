@@ -38,14 +38,14 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 068120846bc1b5d499efc988aa7ca51b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
-  Priority: 128
+  Priority: 197
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -117,7 +117,9 @@ MonoBehaviour:
   demonName: Shoggling
   icon: {fileID: 21300000, guid: 5bbbe89e7023d8d4bbb31c82529e23e6, type: 3}
   worth: 600
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 068120846bc1b5d499efc988aa7ca51b, type: 3}
+  hasSummoned: 0
+  demonId: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -150,6 +152,18 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 068120846bc1b5d499efc988aa7ca51b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: Priority
+      value: 197
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 068120846bc1b5d499efc988aa7ca51b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170422}

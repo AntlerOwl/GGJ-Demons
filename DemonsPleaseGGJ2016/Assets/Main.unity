@@ -3110,6 +3110,8 @@ MonoBehaviour:
   - {fileID: 11471134, guid: c18af7febc914574a978686ab75a0616, type: 2}
   - {fileID: 11471134, guid: 76f4bd9f16b033b4b8c4f7dad4eb3b16, type: 2}
   - {fileID: 11448638, guid: f676e0bf0d086da4d933cb34cdf25ed7, type: 2}
+  - {fileID: 11471134, guid: 6b15f9f0c6475de468292afc8a1424e9, type: 2}
+  - {fileID: 11471134, guid: 71d305c7ff5881b419a267bc4c2e363e, type: 2}
   allTypes:
   - {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
   - {fileID: 11480348, guid: ff77f5102e1fcef42956a5f3714605f3, type: 2}
@@ -3124,6 +3126,7 @@ MonoBehaviour:
   - {fileID: 11480348, guid: daf4dc0b8c900eb4b94de19dffc9e27a, type: 2}
   - {fileID: 11480348, guid: 60c1762f779248c4886ea29392898b79, type: 2}
   - {fileID: 11480348, guid: 837bf966979ecaa4e8cbf9bdda5211ba, type: 2}
+  - {fileID: 11480348, guid: e61a843e69c383443bbad5afce59a815, type: 2}
   summonSlotsParent: {fileID: 812615434}
   summonThreeSlotsParent: {fileID: 1100427272}
   summonFiveSlotsParent: {fileID: 1829847478}
