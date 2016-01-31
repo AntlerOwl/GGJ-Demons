@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 483432}
   - 114: {fileID: 11423470}
   m_Layer: 0
-  m_Name: Demon_Succubus
+  m_Name: Demon_Unspeakable_Evil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d68f0942eb784591b5f3b05d9d74d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonName: Succubus
-  icon: {fileID: 21300000, guid: 445473560a054324fa230438d2b41d11, type: 3}
-  worth: 1000
+  demonName: Unspeakable Evil
+  icon: {fileID: 21300000, guid: 91926ee835a0d7c4f9deab2a04b46304, type: 3}
+  worth: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -52,15 +52,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 445473560a054324fa230438d2b41d11,
+      objectReference: {fileID: 21300000, guid: 91926ee835a0d7c4f9deab2a04b46304,
         type: 3}
     - target: {fileID: 0}
       propertyPath: demonName
-      value: Succubus
+      value: Unspeakable Evil
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: worth
-      value: 1000
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

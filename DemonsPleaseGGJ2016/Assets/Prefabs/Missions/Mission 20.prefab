@@ -40,15 +40,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
-  - demon: {fileID: 11423470, guid: 0aaf48f17b0e6406283e398e892056fc, type: 2}
+  - demon: {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272, type: 2}
     madeCount: 0
     targetCount: 1
     uiMissionItem: {fileID: 0}
-  reward: 600
-  missionName: Mascot Needed for Fire and Rescue Services
-  description: Preferably a creature that is big enough to show up on helicopter footage
-    from a disaster scene. They should also be fine with following firemen into raging
-    infernos. And should look cool while doing so.
+  reward: 0
+  missionName: Pssssst. Secret task for you.
+  description: "Summon something Unspeakably Evil, won\u2019t ya? It won\u2019t cause
+    the world to end, I swear! Reward: Totally not that the world ends, but $1.000.000.000."
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -62,13 +61,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: missionName
-      value: Mascot Needed for Fire and Rescue Services
+      value: Pssssst. Secret task for you.
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: description
-      value: Preferably a creature that is big enough to show up on helicopter footage
-        from a disaster scene. They should also be fine with following firemen into
-        raging infernos. And should look cool while doing so.
+      value: "Summon something Unspeakably Evil, won\u2019t ya? It won\u2019t cause
+        the world to end, I swear! Reward: Totally not that the world ends, but $1.000.000.000."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: targets.Array.data[1].demon
@@ -81,7 +79,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: reward
-      value: 600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: targets.Array.data[0].targetCount
@@ -90,7 +88,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: targets.Array.data[0].demon
       value: 
-      objectReference: {fileID: 11423470, guid: 0aaf48f17b0e6406283e398e892056fc,
+      objectReference: {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
