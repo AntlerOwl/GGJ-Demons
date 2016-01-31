@@ -14,10 +14,15 @@ public class UISummonPanel : MonoBehaviour
         summonImage.sprite = demon.icon;
         sellButtonText.text = string.Format("Sell {0} [${1}]", demon.demonName, demon.worth);
         gameObject.SetActive(true);
+        demon.PlayAudio();
     }
 
     public void SellDemon()
     {
+        if (demon.worth >= 1000000000)
+        {
+            GameManager.instance.EndGame();
+        }
         GameManager.instance.ChangeTotalMoney(demon.worth);
         gameObject.SetActive(false);
     }

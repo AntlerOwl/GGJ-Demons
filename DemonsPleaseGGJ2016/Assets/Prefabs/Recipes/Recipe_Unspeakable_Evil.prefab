@@ -43,10 +43,6 @@ MonoBehaviour:
   target: {fileID: 11423470, guid: 738edeed768b7429a878ce6e20888272, type: 2}
   ingredients:
   - {fileID: 11471134, guid: 8c16ee2526caa0246893679b247273b4, type: 2}
-  - {fileID: 11471134, guid: f91b091c9caf80b499acb347b8902f52, type: 2}
-  - {fileID: 11448638, guid: 8a06dc18a7ac460419f71f0656b5ed35, type: 2}
-  - {fileID: 11471134, guid: 0e43389211c74624e808a92b30bac347, type: 2}
-  - {fileID: 11471134, guid: c18af7febc914574a978686ab75a0616, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -56,7 +52,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: ingredients.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: target

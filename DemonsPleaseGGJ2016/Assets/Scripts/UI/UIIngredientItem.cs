@@ -6,6 +6,7 @@ public class UIIngredientItem : UIStartDrag
 {
     public Ingredient ingredient;
     [SerializeField]private Image iconImage;
+    [SerializeField]private Text costText;
     private Tooltip tooltip;
 
     public void Init(Ingredient ingred)
@@ -17,13 +18,14 @@ public class UIIngredientItem : UIStartDrag
         {
             image = ingredient.icon;
             iconImage.sprite = image;
+            costText.text = "$" + ingredient.cost;
             GetComponent<Tooltip>().SetTooltipText(ingredient.ingredientName, ingredient.flavorText);
         }
         else
         {
             iconImage.sprite = GUIManager.instance.emptySprite;
         }
-
+        costText.gameObject.SetActive(ingredient);
         if (tooltip)
         {
             tooltip.SetTipActive(ingredient);

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GameManager : MonoBehaviour
@@ -27,5 +28,10 @@ public class GameManager : MonoBehaviour
     {
         totalMoney += amt;
         GUIManager.instance.OnMoneyChange(amt);
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }
