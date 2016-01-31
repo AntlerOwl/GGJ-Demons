@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class SummoningManager : MonoBehaviour
 {
@@ -10,8 +11,14 @@ public class SummoningManager : MonoBehaviour
     public List<Ingredient> allIngredients = new List<Ingredient>();
     public List<ItemType> allTypes = new List<ItemType>();
     public const int MaxTier = 4;
+    private List<UISummonItem> summonThreeSlots = new List<UISummonItem>();
+    private List<UISummonItem> summonFiveSlots = new List<UISummonItem>();
     private List<UISummonItem> summonSlots = new List<UISummonItem>();
     [SerializeField]private Transform summonSlotsParent;
+    [SerializeField]private Transform summonThreeSlotsParent;
+    [SerializeField]private Transform summonFiveSlotsParent;
+    [SerializeField]private Image summonCircleImage; 
+    [SerializeField]private Sprite[] summonCircleSprites;
     private MissionControll missionControll;
 
     public int TotalCost { 
@@ -89,12 +96,15 @@ public class SummoningManager : MonoBehaviour
             ingredientSlots.Add(null);
         }
 
-        summonSlots = new List<UISummonItem>(summonSlotsParent.GetComponentsInChildren<UISummonItem>());
-        for (int i = 0; i < summonSlots.Count; i++)
-        {
-            summonSlots[i].summonSlotId = i;
-            summonSlots[i].iconImage.sprite = GUIManager.instance.emptySprite;
-        }
+//        summonSlots = new List<UISummonItem>(summonSlotsParent.GetComponentsInChildren<UISummonItem>());
+//        for (int i = 0; i < summonSlots.Count; i++)
+//        {
+//            summonSlots[i].summonSlotId = i;
+//            summonSlots[i].iconImage.sprite = GUIManager.instance.emptySprite;
+//        }
+//        summonThreeSlots = new List<UISummonItem>(summonThreeSlotsParent.GetComponentsInChildren<UISummonItem>());
+//        summonFiveSlots = new List<UISummonItem>(summonFiveSlotsParent.GetComponentsInChildren<UISummonItem>());
+
     }
 
     public void OnSummonClick()
@@ -116,6 +126,11 @@ public class SummoningManager : MonoBehaviour
         {
             print("No matching recipes");
         }
+    }
+
+    void SetSummonSlotGroup(bool fromThreeToFive)
+    {
+        
     }
 
     void ClearSummoningTable()

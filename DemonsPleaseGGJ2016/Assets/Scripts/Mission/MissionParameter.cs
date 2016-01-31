@@ -5,7 +5,7 @@ using System.Collections;
 public class MissionParameter
 {
     public Demon demon;
-    public int madeCount = 0;
+    [HideInInspector]public int madeCount = 0;
     public int targetCount = 3;
     public bool IsDone { get { return madeCount >= targetCount; } }
     [HideInInspector]public UIMissionParameterItem uiMissionItem;

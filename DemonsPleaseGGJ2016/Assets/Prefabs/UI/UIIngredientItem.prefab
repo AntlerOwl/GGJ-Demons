@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11419852}
   - 114: {fileID: 11485548}
   - 114: {fileID: 11412974}
+  - 114: {fileID: 11492052}
   m_Layer: 5
   m_Name: UIIngredientItem
   m_TagString: Untagged
@@ -117,6 +118,19 @@ MonoBehaviour:
   image: {fileID: 0}
   ingredient: {fileID: 11453482, guid: 4c53c19ece8034b10a05ef89be4dd215, type: 2}
   iconImage: {fileID: 11471912}
+--- !u!114 &11492052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1254083943, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 1
+  m_AspectRatio: 1
 --- !u!222 &22203734
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -175,6 +189,10 @@ Prefab:
       propertyPath: iconImage
       value: 
       objectReference: {fileID: 11471912}
+    - target: {fileID: 0}
+      propertyPath: m_AspectMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161822}
