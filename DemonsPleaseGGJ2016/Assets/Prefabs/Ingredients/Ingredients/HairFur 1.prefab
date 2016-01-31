@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400616}
   - 114: {fileID: 11471134}
   m_Layer: 0
-  m_Name: HairFur 1
+  m_Name: HairFur 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,13 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Wolf's Hair
+  ingredientName: Lock of Royal Hair
   cost: 0
-  flavorText: Who's a good boy? Who's a good boy?
+  flavorText: poopsies
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 9e8a3bbd342f9af499562c2fe24d37ff, type: 2}
-    tier: 1
+    tier: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -60,7 +60,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Wolf's Hair
+      value: Lock of Royal Hair
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -69,7 +69,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
@@ -78,7 +78,7 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: Who's a good boy? Who's a good boy?
+      value: poopsies
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

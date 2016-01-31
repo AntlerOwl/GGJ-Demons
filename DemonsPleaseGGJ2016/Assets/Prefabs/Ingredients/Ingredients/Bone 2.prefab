@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Skull
-  cost: 0
-  flavorText: Fires in hell, no surprise there.
+  cost: 250
+  flavorText: "Has had an illustrious career as a prop in schoolroom period dramas.\t"
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: 7d9d0668a3079bb4fb73312c48d5b9ec, type: 2}
@@ -82,7 +82,11 @@ Prefab:
         type: 3}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: Fires in hell, no surprise there.
+      value: "Has had an illustrious career as a prop in schoolroom period dramas.\t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

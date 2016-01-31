@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400616}
   - 114: {fileID: 11448638}
   m_Layer: 0
-  m_Name: Things 2
+  m_Name: Things 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,13 +39,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Something Lost
+  ingredientName: Something Abominable
   cost: 100
-  flavorText: '"Lost" or "borrowed" or "stolen" or whatever. Who''s keeping track?'
+  flavorText: It's not recognizable fro whatever it once was. At least you hope it
+    hasn't always looked like this.
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
-    tier: 2
+    tier: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -64,7 +65,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Something Lost
+      value: Something Abominable
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -73,7 +74,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
@@ -90,7 +91,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: flavorText
-      value: '"Lost" or "borrowed" or "stolen" or whatever. Who''s keeping track?'
+      value: It's not recognizable fro whatever it once was. At least you hope it
+        hasn't always looked like this.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

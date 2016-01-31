@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400616}
   - 114: {fileID: 11448638}
   m_Layer: 0
-  m_Name: Things 1
+  m_Name: Things 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,13 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e181a47d18d41fea91a56b34fe79bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Something Fleeting
+  ingredientName: Something Lost
   cost: 100
-  flavorText: 
+  flavorText: '"Lost" or "borrowed" or "stolen" or whatever. Who''s keeping track?'
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
     type: {fileID: 11480348, guid: e55e2d2d2167349b4a8bee4b04856894, type: 2}
-    tier: 1
+    tier: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -64,7 +64,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: ingredientName
-      value: Something Fleeting
+      value: Something Lost
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: typeTier.type
@@ -73,7 +73,7 @@ Prefab:
         type: 2}
     - target: {fileID: 0}
       propertyPath: typeTier.tier
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: icon
@@ -87,6 +87,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: cost
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flavorText
+      value: '"Lost" or "borrowed" or "stolen" or whatever. Who''s keeping track?'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

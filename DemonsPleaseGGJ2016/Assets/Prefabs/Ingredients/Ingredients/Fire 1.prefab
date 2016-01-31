@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Embers from a Ruin
-  cost: 0
+  cost: 100
   flavorText: The trick is to get there right after.
   icon: {fileID: 21300000, guid: eb2267689a0524c03af0242e73bf2a15, type: 3}
   typeTier:
@@ -79,6 +79,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: flavorText
       value: The trick is to get there right after.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cost
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
