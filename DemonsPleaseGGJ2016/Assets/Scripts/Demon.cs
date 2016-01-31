@@ -8,6 +8,8 @@ public class Demon : MonoBehaviour
     public int worth = 0;
     public AudioClip clip;
     private AudioSource source;
+    [HideInInspector]public bool hasSummoned = false;
+    public int demonId;
 
     void Awake()
     {

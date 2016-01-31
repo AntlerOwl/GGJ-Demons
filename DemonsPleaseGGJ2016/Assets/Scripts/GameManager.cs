@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void OnSellSoulClick()
     {
-        
+        ChangeTotalMoney(5000);
+        sellSoulButton.SetActive(false);
     }
 }
